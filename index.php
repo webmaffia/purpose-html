@@ -68,6 +68,41 @@
 				</article>
 			</div>
 		</section>
+
+		<section class="section-framework">
+			<div class="section-framework__bg" style="background-image: url('assets/images/New folder/mountain.png');"></div>
+			<h2 class="section-framework__title">OUR GUIDING<br>FRAMEWORK</h2>
+			<div class="section-framework__circles">
+				<div class="section-framework__circle">
+					<span class="section-framework__circle-inner">
+						<span class="section-framework__circle-label">VALUES</span>
+						<span class="section-framework__circle-subtitle">What We Stand For</span>
+						<span class="section-framework__circle-desc">The principles that guide our decisions and actions.</span>
+					</span>
+				</div>
+				<div class="section-framework__circle">
+					<span class="section-framework__circle-inner">
+						<span class="section-framework__circle-label">STRATEGY</span>
+						<span class="section-framework__circle-subtitle">Our Path Forward</span>
+						<span class="section-framework__circle-desc">How we plan to achieve our vision and deliver impact.</span>
+					</span>
+				</div>
+				<div class="section-framework__circle">
+					<span class="section-framework__circle-inner">
+						<span class="section-framework__circle-label">VISION</span>
+						<span class="section-framework__circle-subtitle">Our Future Ambition</span>
+						<span class="section-framework__circle-desc">Where we want to go and what we aspire to achieve.</span>
+					</span>
+				</div>
+				<div class="section-framework__circle">
+					<span class="section-framework__circle-inner">
+						<span class="section-framework__circle-label">PURPOSE</span>
+						<span class="section-framework__circle-subtitle">Why We Exist</span>
+						<span class="section-framework__circle-desc">The reason we do what we do every day.</span>
+					</span>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<?php require_once 'footer.php'; ?>
