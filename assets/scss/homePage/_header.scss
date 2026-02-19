@@ -1,5 +1,7 @@
 /* Header section - all units via vw(); base 1920, mobile 414 */
 .site-header {
+	position: relative;
+	z-index: 10;
 	height: vw(164);
 	padding: vw(24) vw(85);
 	background: linear-gradient(90deg, #056026 0%, #04BE26 100%);
