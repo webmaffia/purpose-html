@@ -32,6 +32,18 @@
 				</span>
 			</button>
 		</section>
+
+		<section class="section-hope">
+			<div class="section-hope__content">
+				<img src="assets/images/New folder/half-circle.svg" alt="" class="section-hope__half-circle" aria-hidden="true" />
+				<p class="section-hope__tagline">We catalyze treatments</p>
+				<h2 class="section-hope__title">HOPE INTO<br>HEALING</h2>
+				<p class="section-hope__text">A purpose-driven journey of over five decades—improving Lives, Building sustainability, and delivering long-term value to our stakeholders. When you find your WHY. you find a WAY to make it happen. Our founder, Dr. Desh Bandhu Gupta, discovered our 'why' and established our mission—to ensure that no one is left without the quality care they deserve.</p>
+			</div>
+			<div class="section-hope__media">
+				<img src="assets/images/New folder/happy-man-listening-music-park 1.png" alt="Person enjoying music outdoors" class="section-hope__img" />
+			</div>
+		</section>
 	</main>
 
 	<?php require_once 'footer.php'; ?>

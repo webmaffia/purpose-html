@@ -1,0 +1,131 @@
+/* Section Hope Into Healing – two columns, green left + image right; all units vw() */
+.section-hope {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: vw(600);
+}
+
+.section-hope__content {
+	flex: 1 1 50%;
+	min-width: vw(400);
+	background: linear-gradient(90deg, #03732C 0%, #06A33F 53.91%, #08D916 100%);
+	box-shadow: 0 vw(7.989) vw(7.989) 0 rgba(0, 0, 0, 0.25);
+	padding: vw(80) vw(60) vw(80) vw(80);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-hope__half-circle {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 100%;
+	width: auto;
+	max-height: none;
+	object-fit: contain;
+	object-position: right center;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.section-hope__tagline,
+.section-hope__title,
+.section-hope__text {
+	position: relative;
+	z-index: 1;
+}
+
+.section-hope__tagline {
+	color: #FFF;
+	font-family: Inter, sans-serif;
+	font-size: vw(30);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 109%;
+	margin: 0 0 vw(16);
+}
+
+.section-hope__title {
+	color: #FFF;
+	text-shadow: 0 vw(6.108) vw(6.108) rgba(0, 0, 0, 0.25);
+	font-family: Inter, sans-serif;
+	font-size: vw(108);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 105%;
+	text-transform: uppercase;
+	margin: 0 0 vw(32);
+	letter-spacing: 0.02em;
+}
+
+.section-hope__text {
+	color: #FFF;
+	font-family: Inter, sans-serif;
+	font-size: vw(20);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 139%;
+	margin: 0;
+	max-width: vw(835);
+}
+
+.section-hope__media {
+	flex: 1 1 50%;
+	min-width: vw(400);
+	position: relative;
+	overflow: hidden;
+}
+
+.section-hope__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	min-height: vw(600);
+}
+
+/* Mobile: 414px – stack content then image */
+@include max_breakpoint(414px) {
+	.section-hope {
+		flex-direction: column;
+		min-height: auto;
+	}
+
+	.section-hope__content {
+		flex: none;
+		width: 100%;
+		min-width: 0;
+		padding: vw(48, 414) vw(24, 414);
+	}
+
+	.section-hope__tagline {
+		font-size: vw(30, 414);
+		margin-bottom: vw(12, 414);
+	}
+
+	.section-hope__title {
+		font-size: vw(108, 414);
+		text-shadow: 0 vw(6.108, 414) vw(6.108, 414) rgba(0, 0, 0, 0.25);
+		margin-bottom: vw(24, 414);
+	}
+
+	.section-hope__text {
+		font-size: vw(20, 414);
+		max-width: none;
+	}
+
+	.section-hope__media {
+		flex: none;
+		width: 100%;
+		min-width: 0;
+	}
+
+	.section-hope__img {
+		min-height: vw(400, 414);
+	}
+}
