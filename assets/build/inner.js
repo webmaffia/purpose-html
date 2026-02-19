@@ -1,1 +1,1 @@
-"use strict";!function(i){}.call(window,window.jQuery);
+!function(n){}.call(window,window.jQuery);
