@@ -44,6 +44,30 @@
 				<img src="assets/images/New folder/happy-man-listening-music-park 1.png" alt="Person enjoying music outdoors" class="section-hope__img" />
 			</div>
 		</section>
+
+		<section class="section-action">
+			<h2 class="section-action__title">OUR PURPOSE IN ACTION</h2>
+			<div class="section-action__cards">
+				<article class="section-action__card">
+					<img src="assets/images/homepage-icons/action1.svg" alt="" class="section-action__icon" width="120" height="120" />
+					<h3 class="section-action__card-title">Leader Speak</h3>
+					<p class="section-action__card-text">Our leaders share how our purpose guides decisions and inspires our work, driving us to create meaningful impact.</p>
+					<a href="#" class="section-action__btn">Click here to explore!</a>
+				</article>
+				<article class="section-action__card">
+					<img src="assets/images/homepage-icons/action2.svg" alt="" class="section-action__icon" width="120" height="120" />
+					<h3 class="section-action__card-title">Catalyst Chronicles</h3>
+					<p class="section-action__card-text">Lupinytts demonstrate our purpose daily, showing how small actions lead to significant change.</p>
+					<a href="#" class="section-action__btn">Watch their stories</a>
+				</article>
+				<article class="section-action__card">
+					<img src="assets/images/homepage-icons/action3.svg" alt="" class="section-action__icon" width="120" height="120" />
+					<h3 class="section-action__card-title">Wall of Hope</h3>
+					<p class="section-action__card-text">A growing mosaic of Lupinytt, each with a story, is committed to building a better tomorrow.</p>
+					<a href="#" class="section-action__btn">Explore the wall</a>
+				</article>
+			</div>
+		</section>
 	</main>
 
 	<?php require_once 'footer.php'; ?>
