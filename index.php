@@ -103,6 +103,33 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="section-core">
+			<h2 class="section-core__title">3 CORE<br>COMMITMENTS</h2>
+			<div class="section-core__cards">
+				<article class="section-core__card">
+					<div class="headingWrapper">
+						<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
+						<p class="section-core__card-text">Relief from disease</p>
+					</div>
+					<img src="assets/images/homepage-icons/core1.svg" alt="" class="section-core__card-icon" width="120" height="120" />
+				</article>
+				<article class="section-core__card">
+					<div class="headingWrapper">
+						<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
+						<p class="section-core__card-text">Innovation to unlock</p>
+					</div>
+					<img src="assets/images/homepage-icons/core2.svg" alt="" class="section-core__card-icon" width="120" height="120" />
+				</article>
+				<article class="section-core__card">
+					<div class="headingWrapper">
+						<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
+						<p class="section-core__card-text">Solution for Undeserved communities</p>
+					</div>
+					<img src="assets/images/homepage-icons/core3.svg" alt="" class="section-core__card-icon" width="120" height="120" />
+				</article>
+			</div>
+		</section>
 	</main>
 
 	<?php require_once 'footer.php'; ?>
