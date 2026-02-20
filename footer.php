@@ -1,5 +1,59 @@
-<footer>
-
+<footer class="footer">
+	<div class="footer__inner">
+		<div class="footer__top">
+			<nav class="footer__nav" aria-label="Footer navigation">
+				<div class="footer__nav-col">
+					<a href="#" class="footer__link">News &amp; Events</a>
+					<a href="#" class="footer__link">We Are Catalysts</a>
+					<a href="#" class="footer__link">Purpose Highlights</a>
+				</div>
+				<div class="footer__nav-col">
+					<a href="#" class="footer__link">Leader Speak</a>
+					<a href="#" class="footer__link">Catalyst Chronicles</a>
+					<a href="#" class="footer__link">Wall Of Hope</a>
+				</div>
+			</nav>
+			<div class="footer__subscribe">
+				<h3 class="footer__subscribe-title">SUBSCRIBE US</h3>
+				<form class="footer__form" action="#" method="post">
+					<input type="email" name="email" class="footer__input" placeholder="Email Id" required />
+					<button type="submit" class="footer__submit" aria-label="Subscribe">
+						<img src="assets/images/social-icons/arrowbutton.svg" alt="" width="24" height="24" />
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer__divider" role="presentation"></div>
+		<div class="footer__middle">
+			<div class="footer__social">
+				<a href="#" class="footer__social-link" aria-label="X (Twitter)"><img src="assets/images/social-icons/x.com.svg" alt="" width="24" height="24" /></a>
+				<a href="#" class="footer__social-link" aria-label="Facebook"><img src="assets/images/social-icons/facebook.svg" alt="" width="24" height="24" /></a>
+				<a href="#" class="footer__social-link" aria-label="Instagram"><img src="assets/images/social-icons/insta.svg" alt="" width="24" height="24" /></a>
+				<a href="#" class="footer__social-link" aria-label="LinkedIn"><img src="assets/images/social-icons/linkedin.svg" alt="" width="24" height="24" /></a>
+				<a href="#" class="footer__social-link" aria-label="YouTube"><img src="assets/images/social-icons/youtube.svg" alt="" width="24" height="24" /></a>
+			</div>
+			<div class="footer__contact">
+				<a href="mailto:Lmsinfo@Lupin.Com" class="footer__contact-item">
+					<img src="assets/images/social-icons/mail.svg" alt="" class="footer__contact-icon" width="20" height="20" />
+					<span>Lmsinfo@Lupin.Com</span>
+				</a>
+				<a href="tel:+912240189999" class="footer__contact-item">
+					<img src="assets/images/social-icons/call.svg" alt="" class="footer__contact-icon" width="20" height="20" />
+					<span>+91 22 4018 9999</span>
+				</a>
+			</div>
+		</div>
+		<div class="footer__divider" role="presentation"></div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-left">
+				<div class="footer__legal">
+					<a href="#">Privacy</a><span class="footer__sep">|</span><a href="#">Disclaimer</a><span class="footer__sep">|</span><a href="#">Sitemap</a>
+				</div>
+				<p class="footer__copyright">© 2025 Lupin. All Rights Reserved</p>
+			</div>
+			<a href="https://www.lupin.com" target="_blank" rel="noopener noreferrer" class="footer__website">www.lupin.com</a>
+		</div>
+	</div>
 </footer>
 <script>
     if ( navigator.serviceWorker ) {
