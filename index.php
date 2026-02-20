@@ -33,6 +33,52 @@
 			</button>
 		</section>
 
+		<section class="section-core">
+			<img src="assets/images/core/text bg.svg" alt="" class="section-core__text-bg" aria-hidden="true" />
+			<h2 class="section-core__title">3 CORE<br>COMMITMENTS</h2>
+			<div class="section-core__cards">
+				<article class="section-core__card section-core__card--hover-image">
+					<img src="assets/images/core/greencircle.svg" alt="" class="section-core__card-circle" aria-hidden="true" />
+					<div class="section-core__card-bg" style="background-image: url('assets/images/core/hand.png');" aria-hidden="true"></div>
+					<div class="section-core__card-overlay" aria-hidden="true"></div>
+					<div class="section-core__card-content">
+						<div class="headingWrapper">
+							<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
+							<p class="section-core__card-text">Relief from disease</p>
+						</div>
+						<p class="section-core__card-desc">Delivering meaningful treatments for today and tomorrow</p>
+					</div>
+					<img src="assets/images/homepage-icons/core1.svg" alt="" class="section-core__card-icon" width="120" height="120" />
+				</article>
+				<article class="section-core__card section-core__card--hover-image">
+					<img src="assets/images/core/greencircle.svg" alt="" class="section-core__card-circle" aria-hidden="true" />
+					<div class="section-core__card-bg" style="background-image: url('assets/images/core/hand.png');" aria-hidden="true"></div>
+					<div class="section-core__card-overlay" aria-hidden="true"></div>
+					<div class="section-core__card-content">
+						<div class="headingWrapper">
+							<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
+							<p class="section-core__card-text">Innovation to unlock</p>
+						</div>
+						<p class="section-core__card-desc">Unlocking new ideas and solutions for better outcomes</p>
+					</div>
+					<img src="assets/images/homepage-icons/core2.svg" alt="" class="section-core__card-icon" width="120" height="120" />
+				</article>
+				<article class="section-core__card section-core__card--hover-image">
+					<img src="assets/images/core/greencircle.svg" alt="" class="section-core__card-circle" aria-hidden="true" />
+					<div class="section-core__card-bg" style="background-image: url('assets/images/core/hand.png');" aria-hidden="true"></div>
+					<div class="section-core__card-overlay" aria-hidden="true"></div>
+					<div class="section-core__card-content">
+						<div class="headingWrapper">
+							<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
+							<p class="section-core__card-text">Solution for Undeserved communities</p>
+						</div>
+						<p class="section-core__card-desc">Reaching underserved communities with meaningful solutions</p>
+					</div>
+					<img src="assets/images/homepage-icons/core3.svg" alt="" class="section-core__card-icon" width="120" height="120" />
+				</article>
+			</div>
+		</section>
+
 		<section class="section-hope">
 			<div class="section-hope__content">
 				<img src="assets/images/New folder/half-circle.svg" alt="" class="section-hope__half-circle" aria-hidden="true" />
@@ -104,32 +150,7 @@
 			</div>
 		</section>
 
-		<section class="section-core">
-			<h2 class="section-core__title">3 CORE<br>COMMITMENTS</h2>
-			<div class="section-core__cards">
-				<article class="section-core__card">
-					<div class="headingWrapper">
-						<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
-						<p class="section-core__card-text">Relief from disease</p>
-					</div>
-					<img src="assets/images/homepage-icons/core1.svg" alt="" class="section-core__card-icon" width="120" height="120" />
-				</article>
-				<article class="section-core__card">
-					<div class="headingWrapper">
-						<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
-						<p class="section-core__card-text">Innovation to unlock</p>
-					</div>
-					<img src="assets/images/homepage-icons/core2.svg" alt="" class="section-core__card-icon" width="120" height="120" />
-				</article>
-				<article class="section-core__card">
-					<div class="headingWrapper">
-						<img src="assets/images/homepage-icons/pointer.svg" alt="" class="section-core__card-asterisk" aria-hidden="true" />
-						<p class="section-core__card-text">Solution for Undeserved communities</p>
-					</div>
-					<img src="assets/images/homepage-icons/core3.svg" alt="" class="section-core__card-icon" width="120" height="120" />
-				</article>
-			</div>
-		</section>
+	
 	</main>
 
 	<?php require_once 'footer.php'; ?>
