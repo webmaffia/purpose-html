@@ -17,11 +17,11 @@
 			<div class="hero__poster" style="background-image: url('assets/images/hero/poster.png');"></div>
 			<!-- Desktop video: shown above 414px -->
 			<video class="hero__video hero__video--desktop" poster="assets/images/hero/poster.png" playsinline muted loop>
-				<source src="assets/videos/hero-desktop.mp4" type="video/mp4" />
+				<source src="assets/videos/3-Our Purpose -Standalone -High Resolution.mp4" type="video/mp4" />
 			</video>
 			<!-- Mobile video: shown at 414px and below -->
 			<video class="hero__video hero__video--mobile" poster="assets/images/hero/poster.png" playsinline muted loop>
-				<source src="assets/videos/hero-mobile.mp4" type="video/mp4" />
+				<source src="assets/videos/3-Our Purpose -Standalone -High Resolution.mp4" type="video/mp4" />
 			</video>
 			<button type="button" class="hero__play-wrap" aria-label="Play video">
 				<span class="hero__animation-wrap" aria-hidden="true">
