@@ -1,0 +1,282 @@
+@import "header";
+@import "hero";
+@import "hero-animation";
+@import "section-hope";
+@import "section-action";
+@import "section-framework";
+@import "section-core";
+@import "section-1";
+
+// Hero section ⭐
+.purpose__hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.purpose__hero-image {
+  width: vw(1920);
+  height: vw(1000);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  padding-bottom: vw(80);
+}
+
+// Title ⭐
+.purpose__title {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: vw(108);
+  line-height: 105%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #006b07 0%, #00d10e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: vw(90);
+  padding-left: vw(80);
+}
+
+// Year's button
+.purpose__year-selector {
+  margin: vw(30);
+  display: flex;
+  gap: vw(25);
+  padding-left: vw(60);
+}
+
+.year-btn {
+  font-weight: bold;
+  font-family: Inter;
+  font-size: vw(35);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 105%;
+  padding: vw(10) vw(15);
+  justify-content: center;
+  align-items: center;
+  border-radius: vw(10);
+  background: #03842e;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Active (Filled Green) */
+.year-btn.active {
+  background: #03842e;
+  color: #ffffff;
+  border: vw(1) solid #03842e;
+}
+
+/* Inactive (Outlined) */
+.year-btn:not(.active) {
+  background: transparent;
+  color: #03842e;
+  border: vw(1) solid #08a03f;
+}
+
+.year-btn:hover {
+  opacity: 0.85;
+}
+
+// Months ⭐
+.purpose__months {
+  width: 100%;
+  height: vw(116);
+  background: linear-gradient(90deg, #056026 0%, #04be26 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 vw(80);
+}
+
+.month {
+  width: vw(205);
+  height: vw(70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: vw(25);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 105%;
+  border-radius: vw(16.8);
+  border: vw(0.908) solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Active Month */
+.month.active {
+  border: vw(0.908) solid #fff;
+  box-shadow: 0 vw(3.631) vw(3.631) 0 rgba(0, 0, 0, 0.25);
+}
+
+// Hero section ⭐
+
+.purpose-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: vw(60);
+}
+
+/* MEDIA WRAPPER — THIS CONTROLS SIZE */
+.purpose-hero__media {
+  position: relative;
+  width: vw(1587.683);
+  height: vw(833.414);
+  aspect-ratio: 301 / 158;
+  max-width: 100%;
+  margin-bottom: vw(40);
+}
+
+.purpose-hero__media .hero__poster,
+.purpose-hero__media .hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: vw(20);
+}
+
+/* Poster styling */
+.purpose-hero__media .hero__poster {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Video styling */
+.purpose-hero__media .hero__video {
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Desktop video: visible above 414px */
+.purpose-hero .hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.purpose-hero .hero__video--desktop {
+  display: block;
+}
+
+.purpose-hero .hero__video--mobile {
+  display: none;
+}
+
+/* When playing: hide poster and play button, show video */
+.purpose-hero.hero.is-playing .hero__poster,
+.purpose-hero.hero.is-playing .hero__play-wrap {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.purpose-hero.hero.is-playing .hero__video {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.purpose-hero__media .hero__play-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Wrapper sized to full graphic (animation); centers in hero */
+.purpose-hero .hero__play-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: vw(409);
+  height: vw(409);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Animation (concentric circles) – behind, full size */
+.purpose-hero .hero__animation-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.purpose-hero .hero__animation {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Play button (green circle + triangle) – on top, centered */
+.purpose-hero .hero__play-wrap-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: vw(186);
+  height: vw(186);
+}
+
+.purpose-hero .hero__play {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile: 414px base for vw – show mobile video, hide desktop */
+@include max_breakpoint(414px) {
+  .purpose-hero.hero {
+    margin-top: vw(0, 414);
+    min-height: vw(400, 414);
+  }
+
+  .purpose-hero .hero__video--desktop {
+    display: none;
+  }
+
+  .purpose-hero .hero__video--mobile {
+    display: block;
+  }
+
+  .purpose-hero .hero__play-wrap {
+    width: vw(260, 414);
+    height: vw(260, 414);
+  }
+
+  .purpose-hero .hero__play-wrap-inner {
+    width: vw(120, 414);
+    height: vw(120, 414);
+  }
+}

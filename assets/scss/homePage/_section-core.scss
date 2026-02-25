@@ -1,0 +1,253 @@
+/* Section 3 CORE COMMITMENTS – Figma 1-5; white bg, green title, three dark green cards; all units vw() */
+.section-core {
+	width: 100%;
+	padding: vw(125) vw(85) vw(80);
+	background: #fff;
+	position: relative;
+}
+
+.section-core__text-bg {
+	position: absolute;
+	left: vw(199);
+	top: 0;
+	z-index: 0;
+	max-width: 100%;
+	height: auto;
+	pointer-events: none;
+}
+
+.section-core__title {
+	position: relative;
+	z-index: 1;
+	background: linear-gradient(90deg, #033A17 0%, #06A33F 60.1%, #09C74E 97.6%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	font-family: Inter, sans-serif;
+	font-size: vw(155);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 97%;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0 0 vw(60);
+	text-shadow: 0 vw(7.989) vw(7.989) rgba(0, 0, 0, 0.25);
+}
+
+.section-core__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 0;
+	max-width: vw(1718);
+	margin: 0 auto;
+}
+
+.section-core__card {
+	width: vw(569);
+	height: vw(551);
+	flex: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	text-align: left;
+	padding: vw(40) vw(32);
+	background: #033A17;
+	border-radius: vw(46.7);
+	box-shadow: 0 vw(7.989) vw(7.989) 0 rgba(0, 0, 0, 0.25);
+	position: relative;
+	overflow: hidden;
+}
+
+/* Subtle pattern inside card */
+.section-core__card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.08) 0%, transparent 60%);
+	pointer-events: none;
+	border-radius: inherit;
+}
+
+/* Green circle (absolute); hidden on second article */
+.section-core__card--hover-image .section-core__card-circle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	max-width: 100%;
+	height: auto;
+	pointer-events: none;
+}
+
+.section-core__card-circle--hidden {
+	display: none;
+}
+
+/* First card hover: hand image + overlay (Figma 2-2) */
+.section-core__card--hover-image .section-core__card-bg {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 0;
+	border-radius: inherit;
+}
+
+.section-core__card--hover-image .section-core__card-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to top, rgba(3, 58, 23, 0.92) 0%, rgba(3, 58, 23, 0.4) 45%, transparent 70%);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 1;
+	pointer-events: none;
+	border-radius: inherit;
+}
+
+.section-core__card--hover-image:hover .section-core__card-bg,
+.section-core__card--hover-image:hover .section-core__card-overlay {
+	opacity: 1;
+}
+
+.section-core__card--hover-image:hover .section-core__card-icon {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+/* Default: content at top; on hover: content at bottom (Figma 2-2) */
+.section-core__card--hover-image .section-core__card-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: vw(12);
+	margin-top: 0;
+	transition: margin-top 0.3s ease;
+}
+
+.section-core__card--hover-image:hover .section-core__card-content {
+	margin-top: auto;
+}
+
+.section-core__card--hover-image .section-core__card-desc {
+	color: #FFF;
+	font-family: Inter, sans-serif;
+	font-size: vw(18);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 142%;
+	margin: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	max-height: 0;
+	overflow: hidden;
+}
+
+.section-core__card--hover-image:hover .section-core__card-desc {
+	opacity: 1;
+	max-height: vw(80);
+	width: 60%;
+	margin-left: vw(40);
+}
+
+.section-core__card .headingWrapper {
+	display: flex;
+	align-items: center;
+	gap: vw(15);
+	position: relative;
+	z-index: 1;
+}
+
+/* Asterisk at top left (pointer.svg) */
+.section-core__card-asterisk {
+	position: relative;
+	z-index: 1;
+	width: vw(24);
+	height: vw(24);
+	object-fit: contain;
+	
+}
+
+.section-core__card-text {
+	position: relative;
+	z-index: 1;
+	color: #FFF;
+	font-family: Inter, sans-serif;
+	font-size: vw(30);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 122%;
+
+}
+
+.section-core__card-icon {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	width: vw(569);
+	height: vw(551);
+	object-fit: contain;
+	margin-top: auto;
+	transition: opacity 0.3s ease;
+}
+
+.section-core__card--hover-image .section-core__card-icon {
+	opacity: 1;
+}
+
+/* Mobile: 414px */
+@include max_breakpoint(414px) {
+	.section-core {
+		padding: vw(125, 414) vw(24, 414) vw(48, 414);
+	}
+
+	.section-core__text-bg {
+		left: vw(199, 414);
+	}
+
+	.section-core__title {
+		font-size: vw(155, 414);
+		line-height: 97%;
+		margin-bottom: vw(40, 414);
+		text-shadow: 0 vw(7.989, 414) vw(7.989, 414) rgba(0, 0, 0, 0.25);
+	}
+
+	.section-core__cards {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.section-core__card {
+		flex: none;
+		width: vw(569, 414);
+		height: vw(551, 414);
+		padding: vw(32, 414) vw(24, 414);
+		border-radius: vw(46.7, 414);
+		box-shadow: 0 vw(7.989, 414) vw(7.989, 414) 0 rgba(0, 0, 0, 0.25);
+	}
+
+	.section-core__card-asterisk {
+		width: vw(20, 414);
+		height: vw(20, 414);
+		
+	}
+
+	.section-core__card-text {
+		font-size: vw(30, 414);
+		line-height: 122%;
+	
+	}
+
+	.section-core__card-icon {
+		width: vw(569, 414);
+		height: vw(551, 414);
+	}
+}

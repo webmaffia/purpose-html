@@ -1,0 +1,49 @@
+/* Shared pulse animation – hero rings, section-core, section-hope, section-framework */
+@keyframes pulse-scale {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.06);
+	}
+}
+
+/* Hope half-circle: keep translateY(-50%) so position doesn’t change */
+@keyframes pulse-scale-half-circle {
+	0%,
+	100% {
+		transform: translateY(-50%) scale(1);
+	}
+	50% {
+		transform: translateY(-50%) scale(1.06);
+	}
+}
+
+/* Framework circle ::before: keep translate(-50%, -50%) so position doesn’t change */
+@keyframes pulse-scale-centered {
+	0%,
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1.06);
+	}
+}
+
+.hero__animation-wrap {
+	animation: pulse-scale 2.5s ease-in-out infinite;
+}
+
+.section-core__text-bg,
+.section-core__card-circle {
+	animation: pulse-scale 2.5s ease-in-out infinite;
+}
+
+.section-hope__half-circle {
+	animation: pulse-scale-half-circle 2.5s ease-in-out infinite;
+}
+
+.section-framework__circle::before {
+	animation: pulse-scale-centered 2.5s ease-in-out infinite;
+}

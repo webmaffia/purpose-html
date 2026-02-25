@@ -1,0 +1,14 @@
+.leadership__hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.leadership__hero-image {
+  width: vw(1920);
+  height: vw(850);           
+  aspect-ratio: 16 / 9;         
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}

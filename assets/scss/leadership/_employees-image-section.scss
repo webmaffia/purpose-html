@@ -1,0 +1,332 @@
+.leadership__title {
+  position: relative;
+  font-size: vw(111);
+  font-weight: 700;
+  background-image: linear-gradient(to right, #006b07, #00d10e);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  line-height: 105%;
+  padding-top: vw(90);
+  padding-left: vw(100);
+}
+
+/* Container section full width */
+.leadership__employees-image-section {
+  width: 100%;
+  padding: vw(40) 5%;
+}
+
+/* GRID LAYOUT */
+.leadership__employees-image-container {
+  display: grid;
+  gap: vw(20);
+  justify-content: center;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .leadership__employees-image-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/* Large screen */
+@media (min-width: 1024px) {
+  .leadership__employees-image-container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+/* Card Styling */
+.leadership__employee-card {
+  position: relative;
+  border-radius: vw(16);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  aspect-ratio: 560 / 617;
+  background: linear-gradient(
+    to bottom,
+    #0a7f3f 0%,
+    /* Green top */ #0a7f3f 55%,
+    /* Keep green till middle */ #4a4a4a 100% /* Grey bottom */
+  );
+}
+
+/* Green Glow */
+.leadership__employee-card:nth-child(odd) {
+  background: radial-gradient(
+    circle at center,
+    #1faa59 0%,
+    #0b8a43 40%,
+    #064d26 75%,
+    #04361a 100%
+  );
+}
+
+/* Grey Glow */
+.leadership__employee-card:nth-child(even) {
+  background: radial-gradient(
+    circle at center,
+    #7a7a7a 0%,
+    #555 40%,
+    #333 75%,
+    #1a1a1a 100%
+  );
+}
+
+.leadership__employee-card:hover {
+  transform: translateY(vw(-5));
+}
+
+/* Image */
+.leadership__employee-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+/* Text */
+.leadership__employee-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: vw(40);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  color: white;
+}
+
+/* Name */
+.leadership__employee-info h4 {
+  margin: 0;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: vw(30);
+  line-height: 105%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  word-break: normal;
+  text-align: left;
+  max-width: vw(350);
+}
+
+/* Designation */
+.leadership__employee-info p {
+  margin: vw(10) 0 0;
+  opacity: 0.85;
+  color: #09f519;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: vw(22);
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* Hide cards after 4 */
+.leadership__employees-image-container
+  .leadership__employee-card:nth-child(n + 4) {
+  display: none;
+}
+
+// Displays card when view button is clicked
+.leadership__employees-image-container.show-all .leadership__employee-card {
+  display: block;
+}
+
+/* Button styling */
+/* Button wrapper */
+.leadership__button-wrapper {
+  width: 100%;
+  margin: vw(40) 0;
+}
+
+/* Button */
+.leadership__view-btn {
+  width: 100%;
+  padding: vw(14) 0;
+  background: linear-gradient(270deg, #003e04 0%, #08a03f 100%);
+  border: none;
+  border-radius: vw(2);
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: vw(40);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+// Pop-up Modal ⭐
+
+/* Overlay */
+.leadership__modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(vw(6));
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Show modal */
+.leadership__modal.active {
+  display: flex;
+}
+
+/* Modal box */
+.leadership__modal-content {
+  background: #fff;
+  width: vw(1720);
+  height: vw(817);
+  border-radius: vw(15);
+  display: flex;
+  padding: vw(30);
+  position: relative;
+  align-items: stretch;
+}
+
+/* Close */
+.leadership__modal-close {
+  position: absolute;
+  top: vw(50);
+  right: vw(50);
+  width: vw(60);
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Left image */
+
+.leadership__modal-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: vw(20);
+  width: vw(560);
+  height: vw(617);
+  overflow: hidden;
+}
+
+/* Gradient layer */
+.leadership__modal-left::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 0;
+}
+
+/* Background variations */
+.green-bg::before {
+  background: radial-gradient(
+    circle at 50% 45%,
+    #22c36a 0%,
+    #0b8a43 45%,
+    #064d26 80%,
+    #032313 100%
+  );
+}
+
+.grey-bg::before {
+  background: radial-gradient(
+    circle at 50% 45%,
+    #8a8a8a 0%,
+    #555 45%,
+    #2c2c2c 80%,
+    #111 100%
+  );
+}
+
+/* Wrapper controls spacing instead of the image */
+.leadership__image-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image fills wrapper */
+.leadership__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right content */
+.leadership__modal-right {
+  margin-left: vw(40);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.leadership__modal-right p {
+  width: 100%;
+  text-align: left;
+  font-size: vw(25);
+  margin-top: vw(100);
+  color: #006b07;
+  font-weight: 400;
+  line-height: vw(45);
+}
+
+.modal-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.leadership__modal-right h4 {
+  font-size: vw(40);
+  line-height: vw(42);
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00d10e 0%, #006b07 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: vw(450);
+}
+
+.leadership__modal-right span {
+  font-size: vw(22);
+  color: #002603;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal-footer {
+  margin-bottom: vw(100);
+}
+
+.quote {
+  width: vw(278);
+  position: absolute;
+}
+
+.quote-top {
+  top: vw(5);
+  left: vw(5);
+}
+
+.quote-bottom {
+  bottom: vw(5);
+  right: vw(5);
+}
