@@ -61,64 +61,100 @@
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="0s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/1.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="0s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="0s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/1.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="2.78s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/2.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="2.78s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="2.78s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/2.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="5.56s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/3.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="5.56s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="5.56s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/3.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="8.33s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/4.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="8.33s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="8.33s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/4.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="11.11s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/5.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="11.11s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="11.11s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/5.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="13.89s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/6.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="13.89s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="13.89s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/6.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="16.67s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/7.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="16.67s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="16.67s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/7.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="19.44s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/9.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="19.44s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="19.44s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/9.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 					<g class="section-chronicles-bg__profile-wrap">
 						<animateMotion dur="25s" repeatCount="indefinite" calcMode="linear" begin="22.22s">
 							<mpath href="#chronicles-motion-path" xlink:href="#chronicles-motion-path"/>
 						</animateMotion>
-						<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
-						<image href="assets/images/catylist/infinite/1.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						<g>
+							<animateTransform attributeName="transform" type="scale" values="1;0.35" dur="25s" repeatCount="indefinite" calcMode="linear" begin="22.22s"/>
+							<animate attributeName="opacity" values="1;0.2" dur="25s" repeatCount="indefinite" calcMode="linear" begin="22.22s"/>
+							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="3"/>
+							<image href="assets/images/catylist/infinite/1.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
+						</g>
 					</g>
 				</svg>
 			</div>
