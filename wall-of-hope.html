@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- IMPORTANT -->
+    <!-- Change this value -->
+    <!--
+        Needed for name resolution when providing relative paths.
+        Uncomment if required to solve rewritten path
+    -->
+    <!-- <base href="/new-project-template/" /> -->
+
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/critical.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+
+    <!-- MANIFEST FILE FOR PWA -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+
+    <!-- THEME Color -->
+    <!--
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#249adf">
+    -->
+
+    <title>Wall Of Hope</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-header__logo" aria-label="Lupin Home">
+                <img src="assets/images/logo.svg" alt="Lupin" width="85" height="102" />
+            </a>
+            <nav class="site-header__nav-cards" aria-label="Main navigation">
+                <a href="index.html#leaders-speak" class="site-header__nav-card">
+                    <img src="assets/images/homepage-icons/nav1.svg" alt="" width="170" height="149" />
+                </a>
+                <a href="index.html#catalyst-chronicles" class="site-header__nav-card">
+                    <img src="assets/images/homepage-icons/nav2.svg" alt="" width="170" height="149" />
+                </a>
+                <a href="wall-of-hope.html" class="site-header__nav-card">
+                    <img src="assets/images/homepage-icons/nav3.svg" alt="" width="170" height="149" />
+                </a>
+            </nav>
+            <nav class="site-header__utility" aria-label="Utility navigation">
+                <a href="index.html" class="site-header__utility-link"><span class="site-header__utility-link-text">Home</span></a>
+                <span class="site-header__utility-sep" aria-hidden="true"></span>
+                <a href="index.html#news-events" class="site-header__utility-link"><span class="site-header__utility-link-text">News &amp; Events</span></a>
+                <span class="site-header__utility-sep" aria-hidden="true"></span>
+                <a href="index.html#purpose-highlights" class="site-header__utility-link"><span class="site-header__utility-link-text">Purpose Highlights</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hopes__hero">
+        <img class="hopes__hero-image" src="assets/images/hero/wall-of-hopes-hero.png" alt="hopes section image"
+            fetchpriority="high" />
+    </section>
+
+    <!-- Mosaic grid: 12 items, 3 columns (order: col1=1,4,7,10 col2=2,5,8,11 col3=3,6,9,12) -->
+    <section class="hopes__mosaic">
+        <h1 class="hopes__mosaic-title">Wall Of Hope</h1>
+        <div class="hopes__mosaic-grid">
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-left hopes__mosaic-item--bg-1">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/1.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Mugdhakumari Patel</h3>
+                            <p>PEK BD STAT – CRO</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-left hopes__mosaic-item--bg-4">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/4.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Rajiv Puri</h3>
+                            <p>API</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-left hopes__mosaic-item--bg-7">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/7.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Amarnath Prakash</h3>
+                            <p>Manufacturing</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--top-left hopes__mosaic-item--bg-10">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/10.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Kumaran Govindasamy</h3>
+                            <p>IPMG</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-right hopes__mosaic-item--bg-2">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/2.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Awadhkishor Bhadoriya</h3>
+                            <p>IT Operations</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-left hopes__mosaic-item--bg-5">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/5.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Nirav Bhatt</h3>
+                            <p>Technical Training</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-right hopes__mosaic-item--bg-8">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/8.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Prasath S</h3>
+                            <p>Field Force</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-right hopes__mosaic-item--bg-11">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/11.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Sarita Dagur</h3>
+                            <p>Mammalian – Upstream Development Team</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-right hopes__mosaic-item--bg-3">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/3.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Fabiana Goncalves</h3>
+                            <p>Quality Control</p>
+                            <span>Brazil</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-right hopes__mosaic-item--bg-6">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/6.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Meghna Dixit</h3>
+                            <p>Mammalian – Upstream Development Team</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--bottom-right hopes__mosaic-item--bg-9">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/9.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Ledisilane Assis</h3>
+                            <p>HR</p>
+                            <span>Brazil</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="hopes__mosaic-item hopes__mosaic-item--top-left hopes__mosaic-item--bg-12">
+                <div class="hopes__mosaic-flip">
+                    <div class="hopes__mosaic-front">
+                        <img src="assets/images/wall-of-hopes/12.png" alt="" loading="lazy" />
+                        <div class="hopes__mosaic-content">
+                            <h3>Kalpesh Parab</h3>
+                            <p>Finance Shared Services</p>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="hopes__mosaic-back">
+                        <div class="hopes__mosaic-back-inner">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <img class="hopes__mosaic-petals" src="assets/images/wall-of-hopes/petals-flip.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <a href="#" class="footer__link"><span class="footer__link-text">News &amp; Events</span></a>
+                        <a href="#" class="footer__link"><span class="footer__link-text">We Are Catalysts</span></a>
+                        <a href="#" class="footer__link"><span class="footer__link-text">Purpose Highlights</span></a>
+                    </div>
+                    <div class="footer__nav-col">
+                        <a href="#" class="footer__link"><span class="footer__link-text">Leader Speak</span></a>
+                        <a href="catalyst-chronicles.html" class="footer__link"><span class="footer__link-text">Catalyst Chronicles</span></a>
+                        <a href="wall-of-hope.html" class="footer__link"><span class="footer__link-text">Wall Of Hope</span></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__divider" role="presentation"></div>
+            <div class="footer__middle">
+                <div class="footer__contact">
+                    <a href="mailto:corporatecommunication@lupin.com" class="footer__contact-item">
+                        <img src="assets/images/social-icons/mail.svg" alt="" class="footer__contact-icon" width="20" height="20" />
+                        <span>corporatecommunication@lupin.com</span>
+                    </a>
+                    <a href="tel:+912240189999" class="footer__contact-item">
+                        <img src="assets/images/social-icons/call.svg" alt="" class="footer__contact-icon" width="20" height="20" />
+                        <span>+91 22 4018 9999</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__divider" role="presentation"></div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <div class="footer__legal">
+                        <a href="#">Privacy</a><span class="footer__sep">|</span><a href="#">Disclaimer</a><span class="footer__sep">|</span><a href="#">Sitemap</a>
+                    </div>
+                    <p class="footer__copyright">© 2025 Lupin. All Rights Reserved</p>
+                </div>
+                <a href="https://www.lupin.com" target="_blank" rel="noopener noreferrer" class="footer__website">www.lupin.com</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        if ( navigator.serviceWorker ) {
+            navigator.serviceWorker.register("sw.js")
+                .then( function(reg){
+                    console.log('Service worker registration', reg);
+                })
+                .catch( function(err){
+                    console.error('Service Worker Error', err);
+                });
+
+            window.addEventListener('beforeinstallprompt', function (event) {
+                var e = event;
+                e.preventDefault();
+            });
+        }
+    </script>
+    <script>
+    !function () {
+        var baseName = 'wall-of-hope.html',
+            assets = 'assets',
+            libs = [assets + '/build/common.js'],
+            scripts = [],
+            loadScript = function (i) {
+                var script = scripts[i];
+
+                if (script) {
+                    script = document.createElement('script');
+                    script.async = true;
+                    script.crossorigin = 'anonymous';
+                    script.src = scripts[i];
+                    document.head.appendChild(script);
+
+                    script.onload = function (e) {
+                        script = undefined;
+                        loadScript(i+1);
+                    };
+
+                    script.onerror = function (e) {
+                        console.error('No more scripts will be loaded because "' + script.src + '" failed to load!');
+                    };
+                } else {
+                    loadScript = script_file = scripts = undefined;
+                }
+            };
+
+        scripts.push(assets + '/build/inner.js');
+        scripts = libs.concat(scripts);
+        loadScript(0);
+    }();
+    </script>
+</body>
+
+</html>
