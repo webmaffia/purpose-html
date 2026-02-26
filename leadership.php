@@ -28,26 +28,26 @@
                 <div class="leadership__employees-image-container">
 
                     <div class="leadership__employee-card" data-name="MANJU DESHBANDHU GUPTA"
-                        data-role="Chief technical Operations Officer"
+                        data-role="Chief Technical Operations Officer"
                         data-quote="Driven by our commitment to business excellence and innovation, our goal is to be a trusted partner for quality medicines, transforming hope into healing."
                         data-image="assets/images/leadership/Manju Deshbandhu Gupta.png">
                         <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
                             src="assets/images/leadership/Manju Deshbandhu Gupta.png" alt="Employee image 4" />
                         <div class="leadership__employee-info">
                             <h4>Manju Deshbandhu Gupta</h4>
-                            <p>Chief technical Operations Officer</p>
+                            <p>Chief Technical Operations Officer</p>
                         </div>
                     </div>
 
-                    <div class="leadership__employee-card" data-name="VINITA & NILESH GUPTA"
-                        data-role="CEO & Managing Directors"
+                    <div class="leadership__employee-card" data-name="VINITA GUPTA and NILESH GUPTA"
+                        data-role="CEO and MD"
                         data-quote="At Lupin, we are not just manufacturers or marketers of medicines. Our Lupinytts are the catalysts, the agents of change, committed to accelerating, enabling and sparking positive change to the health of patients."
                         data-image="assets/images/leadership/Vinita & Nilesh Gupta.png">
                         <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
                             src="assets/images/leadership/Vinita & Nilesh Gupta.png" alt="Employee image 4" />
                         <div class="leadership__employee-info">
-                            <h4>Vinita & Nilesh Gupta</h4>
-                            <p>CEO & Managing Directors</p>
+                            <h4>Vinita Gupta and Nilesh Gupta</h4>
+                            <p>CEO and MD</p>
                         </div>
                     </div>
 
@@ -76,14 +76,14 @@
                     </div>
 
                     <div class="leadership__employee-card" data-name="CHRISTOPH FUNKE"
-                        data-role="Chief technical Operations Officer"
+                        data-role="Chief Technical Operations Officer"
                         data-quote="We’re building a resilient, digitized, and customer-centric supply chain - one that not only meets evolving regulatory requirements but stays anchored in improving patient outcomes worldwide."
                         data-image="assets/images/leadership/Christoph Funke.png">
                         <img fetchpriority="high" class="leadership__employee-image"
                             src="assets/images/leadership/Christoph Funke.png" alt="Employee image 1" />
                         <div class="leadership__employee-info">
                             <h4>CHRISTOPH FUNKE</h4>
-                            <p>Chief technical Operations Officer</p>
+                            <p>Chief Technical Operations Officer</p>
                         </div>
                     </div>
 
