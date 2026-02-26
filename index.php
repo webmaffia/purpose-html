@@ -130,7 +130,7 @@
 						height="120" />
 					<h3 class="section-action__card-title">Catalyst Chronicles</h3>
 					<p class="section-action__card-text">Hear from our Lupinytts on how they are inspired by our purpose in their roles, proving that even small actions can drive significant changes.</p>
-					<a href="#" class="section-action__btn">Watch their stories</a>
+					<a href="catalyst-chronicles.php" class="section-action__btn">Watch their stories</a>
 				</article>
 				<article class="section-action__card">
 					<img src="assets/images/homepage-icons/action3.svg" alt="" class="section-action__icon" width="120"
