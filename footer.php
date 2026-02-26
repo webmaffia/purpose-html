@@ -9,7 +9,7 @@
 				</div>
 				<div class="footer__nav-col">
 					<a href="#" class="footer__link"><span class="footer__link-text">Leader Speak</span></a>
-					<a href="#" class="footer__link"><span class="footer__link-text">Catalyst Chronicles</span></a>
+					<a href="catalyst-chronicles.php" class="footer__link"><span class="footer__link-text">Catalyst Chronicles</span></a>
 					<a href="#" class="footer__link"><span class="footer__link-text">Wall Of Hope</span></a>
 				</div>
 			</nav>
@@ -117,6 +117,9 @@
         scripts.push(assets + '/build/front.js');
     } else {
         scripts.push(assets + '/build/inner.js');
+        if ( baseName === 'catalyst-chronicles.php' ) {
+            scripts.push(assets + '/build/front.js');
+        }
 
         switch (baseName) {
             case '':

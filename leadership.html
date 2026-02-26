@@ -1,0 +1,438 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- IMPORTANT -->
+    <!-- Change this value -->
+    <!--
+        Needed for name resolution when providing relative paths.
+        Uncomment if required to solve rewritten path
+    -->
+    <!-- <base href="/new-project-template/" /> -->
+
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/critical.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+
+    <!-- MANIFEST FILE FOR PWA -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+
+    <!-- THEME Color -->
+    <!--
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#249adf">
+    -->
+
+    <title></title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="/" class="site-header__logo" aria-label="Lupin Home">
+                <img src="assets/images/logo.svg" alt="Lupin" width="85" height="102" />
+            </a>
+            <nav class="site-header__nav-cards" aria-label="Main navigation">
+                <a href="#leaders-speak" class="site-header__nav-card">
+                    <img src="assets/images/homepage-icons/nav1.svg" alt="" width="170" height="149" />
+                </a>
+                <a href="#catalyst-chronicles" class="site-header__nav-card">
+                    <img src="assets/images/homepage-icons/nav2.svg" alt="" width="170" height="149" />
+                </a>
+                <a href="#wall-of-hope" class="site-header__nav-card">
+                    <img src="assets/images/homepage-icons/nav3.svg" alt="" width="170" height="149" />
+                </a>
+            </nav>
+            <nav class="site-header__utility" aria-label="Utility navigation">
+                <a href="/" class="site-header__utility-link is-active"><span class="site-header__utility-link-text">Home</span></a>
+                <span class="site-header__utility-sep" aria-hidden="true"></span>
+                <a href="#news-events" class="site-header__utility-link"><span class="site-header__utility-link-text">News &amp; Events</span></a>
+                <span class="site-header__utility-sep" aria-hidden="true"></span>
+                <a href="#purpose-highlights" class="site-header__utility-link"><span class="site-header__utility-link-text">Purpose Highlights</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Leaders section -->
+    <main>
+        <!-- Hero section -->
+        <section class="leadership__hero">
+            <img class="leadership__hero-image" src="assets/images/hero/Mask group (2).png" alt="Hero section image"
+                fetchpriority="high" />
+        </section>
+
+        <!-- Title -->
+        <div class="leadership__container">
+            <h1 class="leadership__title">OUR LEADERSHIP</h1>
+
+            <!-- Leaders images -->
+            <section class="leadership__employees-image-section">
+                <div class="leadership__employees-image-container">
+
+                    <div class="leadership__employee-card" data-name="MANJU DESHBANDHU GUPTA"
+                        data-role="Chief technical Operations Officer"
+                        data-quote="Driven by our commitment to business excellence and innovation, our goal is to be a trusted partner for quality medicines, transforming hope into healing."
+                        data-image="assets/images/leadership/Manju Deshbandhu Gupta.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Manju Deshbandhu Gupta.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Manju Deshbandhu Gupta</h4>
+                            <p>Chief technical Operations Officer</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="VINITA & NILESH GUPTA"
+                        data-role="CEO & Managing Directors"
+                        data-quote="At Lupin, we are not just manufacturers or marketers of medicines. Our Lupinytts are the catalysts, the agents of change, committed to accelerating, enabling and sparking positive change to the health of patients."
+                        data-image="assets/images/leadership/Vinita & Nilesh Gupta.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Vinita & Nilesh Gupta.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Vinita & Nilesh Gupta</h4>
+                            <p>CEO & Managing Directors</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="RAMESH SWAMINATHAN"
+                        data-role="Executive Director, Global CFO, Head of IT and API plus SBU"
+                        data-quote="At Lupin, financial stewardship goes beyond numbers - it's about catalyzing impact. We invest with purpose, aligning capital with strategies that empower patients, energize teams, and uplift communities."
+                        data-image="assets/images/leadership/Ramesh Swaminathan.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Ramesh Swaminathan.png" alt="Employee image 2" />
+                        <div class="leadership__employee-info">
+                            <h4>Ramesh Swaminathan</h4>
+                            <p>Executive Director, Global CFO, Head of IT and API plus SBU</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="YASHWANT MAHADIK"
+                        data-role="President, Global Human Resources"
+                        data-quote="At Lupin, our people are at the heart of our purpose. We nurture talent with empathy, equip it with capability, and align it with our mission to heal and uplift lives."
+                        data-image="assets/images/leadership/Yashwant Mahadik.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Yashwant Mahadik.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Yashwant Mahadik</h4>
+                            <p>President, Global Human Resources</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="CHRISTOPH FUNKE"
+                        data-role="Chief technical Operations Officer"
+                        data-quote="We're building a resilient, digitized, and customer-centric supply chain - one that not only meets evolving regulatory requirements but stays anchored in improving patient outcomes worldwide."
+                        data-image="assets/images/leadership/Christoph Funke.png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Christoph Funke.png" alt="Employee image 1" />
+                        <div class="leadership__employee-info">
+                            <h4>CHRISTOPH FUNKE</h4>
+                            <p>Chief technical Operations Officer</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="RANJANA PATHAK" data-role="Chief Quality Officer"
+                        data-quote="At Lupin, quality is more than a standard - it's our shared discipline and collective conscience. This unwavering commitment safeguards patients and builds trust worldwide."
+                        data-image="assets/images/leadership/Dr Ranjana Pathak.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Dr Ranjana Pathak.png" alt="Employee image 3" />
+                        <div class="leadership__employee-info">
+                            <h4>Ranjana Pathak</h4>
+                            <p>Chief Quality Officer</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="FABRICE EGROS"
+                        data-role="President, Corporate Development"
+                        data-quote="Strong relationships are foundational to sustainable healthcare. Through strategic partnerships and shared purpose, we are building an innovation-driven and patient-centric ecosystem where every stakeholder, across developed and emerging markets, thrives."
+                        data-image="assets/images/leadership/Dr Fabrice Egros.png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Dr Fabrice Egros.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Fabrice Egros</h4>
+                            <p>President, Corporate Development</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="CLAUS JEPSEN"
+                        data-role="President, Global Speciality"
+                        data-quote="We are building a future of focused growth. Every brand, every program we pursue, is a reaffirmation of our belief in therapies that matter and care that transforms. "
+                        data-image="assets/images/leadership/Claus Jepsen.png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Claus Jepsen.png" alt="Employee image 2" />
+                        <div class="leadership__employee-info">
+                            <h4>Claus Jepsen</h4>
+                            <p>President, Global Speciality</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="RAJEEV SIBAL"
+                        data-role="President, India Region Formulations"
+                        data-quote="Our commitment extends beyond therapeutic leadership — it's about transforming lives through equitable access, deep patient engagement, and purpose-driven innovation. Every initiative brings us one step closer to a healthier, more inclusive world."
+                        data-image="assets/images/leadership/Rajeev Sibal.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Rajeev Sibal.png" alt="Employee image 1" />
+                        <div class="leadership__employee-info">
+                            <h4>Rajeev Sibal</h4>
+                            <p>President, India Region Formulations</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="THIERRY VOLLE"
+                        data-role="President, EMEA and Emerging Markets"
+                        data-quote="As we expand access across developed markets, we do so with agility, empathy, and an unwavering commitment to our purpose: healing. Grounded in therapeutic relevance and guided by proximity to patients, we continue to move forward - together - on our shared mission to catalyze healing."
+                        data-image="assets/images/leadership/Thierry Volle (1).png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Thierry Volle (1).png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Thierry Volle</h4>
+                            <p>President, EMEA and Emerging Markets</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="SOFIA MUMTAZ"
+                        data-role="President, Legal and Compliance, Canada, ANZ, and NEA business"
+                        data-quote="We're building a future-ready organization grounded in ethics and driven by excellence. Every partnership and every product is an opportunity to deliver care that catalyzes healing."
+                        data-image="assets/images/leadership/Sofia Mumtaz1 (2).png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Sofia Mumtaz1 (2).png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Sofia Mumtaz</h4>
+                            <p>President, Legal and Compliance, Canada, ANZ, and NEA business</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="SPIRO GAVARIS"
+                        data-role="President, U.S. Generics"
+                        data-quote="As the U.S. market evolves, Lupin is poised to lead with patient-centricity and a well-balanced portfolio. Our generics and complex generics don't just drive our business — they advance our deeper purpose: expanding access to high-quality care for millions."
+                        data-image="assets/images/leadership/Spiro Gavaris.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Spiro Gavaris.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Spiro Gavaris</h4>
+                            <p>President, U.S. Generics</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="CYRUS KARKARIA"
+                        data-role="President, Biotech Business"
+                        data-quote="We invest in purpose-driven science. Our work in biosimilars focuses on making cutting-edge biologics more accessible – transforming hope into healing for patients around the world."
+                        data-image="assets/images/leadership/Cyrus karkaria (4).png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Cyrus karkaria (4).png" alt="Employee image 3" />
+                        <div class="leadership__employee-info">
+                            <h4>Cyrus Karkaria</h4>
+                            <p>President, Biotech Business</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- button -->
+            <div class="leadership__button-wrapper">
+                <button id="viewAllBtn" class="leadership__view-btn">
+                    View All
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Card pop-up -->
+    <div class="leadership__modal" id="leadershipModal">
+        <div class="leadership__modal-content">
+
+            <!-- Close Button -->
+            <img src="assets/images/leadership/shapes/Group 400.png" class="leadership__modal-close" id="modalClose"
+                alt="Close" />
+
+            <!-- Left Image -->
+            <div class="leadership__modal-left">
+                <div class="leadership__image-wrapper">
+                    <img id="modalImage" src="assets/images/leadership/Yashwant Mahadik_1.png" alt="Employee">
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="leadership__modal-right">
+
+                <img src="assets/images/leadership/shapes/Vector (1).png" class="quote quote-top" alt="quote" />
+
+                <div class="modal-body">
+                    <p id="modalText">
+                        Quote text will come here dynamically.
+                    </p>
+                </div>
+
+
+                <div class="modal-footer">
+                    <h4 id="modalName"></h4>
+                    <span id="modalRole"></span>
+                </div>
+
+                <img src="assets/images/leadership/shapes/Vector (2).png" class="quote quote-bottom" alt="quote" />
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <a href="#" class="footer__link"><span class="footer__link-text">News &amp; Events</span></a>
+                        <a href="#" class="footer__link"><span class="footer__link-text">We Are Catalysts</span></a>
+                        <a href="#" class="footer__link"><span class="footer__link-text">Purpose Highlights</span></a>
+                    </div>
+                    <div class="footer__nav-col">
+                        <a href="#" class="footer__link"><span class="footer__link-text">Leader Speak</span></a>
+                        <a href="catalyst-chronicles.html" class="footer__link"><span class="footer__link-text">Catalyst Chronicles</span></a>
+                        <a href="#" class="footer__link"><span class="footer__link-text">Wall Of Hope</span></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__divider" role="presentation"></div>
+            <div class="footer__middle">
+                <div class="footer__contact">
+                    <a href="mailto:corporatecommunication@lupin.com" class="footer__contact-item">
+                        <img src="assets/images/social-icons/mail.svg" alt="" class="footer__contact-icon" width="20" height="20" />
+                        <span>corporatecommunication@lupin.com</span>
+                    </a>
+                    <a href="tel:+912240189999" class="footer__contact-item">
+                        <img src="assets/images/social-icons/call.svg" alt="" class="footer__contact-icon" width="20" height="20" />
+                        <span>+91 22 4018 9999</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__divider" role="presentation"></div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <div class="footer__legal">
+                        <a href="#">Privacy</a><span class="footer__sep">|</span><a href="#">Disclaimer</a><span class="footer__sep">|</span><a href="#">Sitemap</a>
+                    </div>
+                    <p class="footer__copyright">© 2025 Lupin. All Rights Reserved</p>
+                </div>
+                <a href="https://www.lupin.com" target="_blank" rel="noopener noreferrer" class="footer__website">www.lupin.com</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        if ( navigator.serviceWorker ) {
+            navigator.serviceWorker.register("sw.js")
+                .then( function(reg){
+                    console.log('Service worker registration', reg);
+                })
+                .catch( function(err){
+                    console.error('Service Worker Error', err);
+                });
+
+            window.addEventListener('beforeinstallprompt', function (event) {
+                var e = event;
+                e.preventDefault();
+            });
+        }
+    </script>
+    <script>
+    !function () {
+        var baseName = 'leadership.html',
+            assets = 'assets',
+            libs = [assets + '/build/common.js'],
+            scripts = [],
+            loadScript = function (i) {
+                var script = scripts[i];
+
+                if (script) {
+                    script = document.createElement('script');
+                    script.async = true;
+                    script.crossorigin = 'anonymous';
+                    script.src = scripts[i];
+                    document.head.appendChild(script);
+
+                    script.onload = function (e) {
+                        script = undefined;
+                        loadScript(i+1);
+                    };
+
+                    script.onerror = function (e) {
+                        console.error('No more scripts will be loaded because "' + script.src + '" failed to load!');
+                    };
+                } else {
+                    loadScript = script_file = scripts = undefined;
+                }
+            };
+
+        scripts.push(assets + '/build/inner.js');
+        scripts = libs.concat(scripts);
+        loadScript(0);
+    }();
+    </script>
+</body>
+
+<!-- Cards display when clicked on view button -->
+<script>
+    const btn = document.getElementById("viewAllBtn");
+    const container = document.querySelector(".leadership__employees-image-container");
+
+    btn.addEventListener("click", () => {
+        container.classList.add("show-all");
+        btn.style.display = "none";
+    });
+</script>
+
+<!-- Card pop-up functionality -->
+<script>
+    const cards = document.querySelectorAll(".leadership__employee-card");
+    const modal = document.getElementById("leadershipModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalText = document.getElementById("modalText");
+    const modalName = document.getElementById("modalName");
+    const modalRole = document.getElementById("modalRole");
+    const modalClose = document.getElementById("modalClose");
+    const modalLeft = document.querySelector(".leadership__modal-left");
+
+    cards.forEach((card, index) => {
+        card.addEventListener("click", () => {
+
+            // Set modal content
+            modalImage.src = card.dataset.image;
+            modalText.textContent = card.dataset.quote;
+            modalName.textContent = card.dataset.name;
+            modalRole.textContent = card.dataset.role;
+
+            // Remove previous background classes
+            modalLeft.classList.remove("green-bg", "grey-bg");
+
+            // Toggle based on card position 
+            if ((index + 1) % 2 === 0) {
+                modalLeft.classList.add("grey-bg");
+            } else {
+                modalLeft.classList.add("green-bg");
+            }
+
+            modal.classList.add("active");
+        });
+    });
+
+    modalClose.addEventListener("click", () => {
+        modal.classList.remove("active");
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.remove("active");
+        }
+    });
+</script>
+
+</html>
