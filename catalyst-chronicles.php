@@ -18,14 +18,14 @@
 
 	<main class="wrapper">
 	<section class="hero">
-			<div class="hero__poster" style="background-image: url('assets/images/hero/poster.png');"></div>
+			<div class="hero__poster" style="background-image: url('assets/images/catylist/poster.png');"></div>
 			<!-- Desktop video: shown above 414px -->
-			<video class="hero__video hero__video--desktop" poster="assets/images/hero/poster.png" playsinline muted
+			<video class="hero__video hero__video--desktop" poster="assets/images/catylist/poster.png" playsinline muted
 				loop>
 				<source src="assets/videos/3-Our Purpose -Standalone -High Resolution.mp4" type="video/mp4" />
 			</video>
 			<!-- Mobile video: shown at 414px and below -->
-			<video class="hero__video hero__video--mobile" poster="assets/images/hero/poster.png" playsinline muted
+			<video class="hero__video hero__video--mobile" poster="assets/images/catylist/poster.png" playsinline muted
 				loop>
 				<source src="assets/videos/3-Our Purpose -Standalone -High Resolution.mp4" type="video/mp4" />
 			</video>
@@ -221,7 +221,25 @@
 		</div>
 	</div>
 
+	<style>
+	/* Hide profile circles until SMIL motion has applied (avoids flash at top-left) */
+	#chronicles-union-svg .section-chronicles-bg__profile-wrap { opacity: 0; transition: opacity 0.2s ease; }
+	#chronicles-union-svg.section-chronicles-bg__union--ready .section-chronicles-bg__profile-wrap { opacity: 1; }
+	</style>
 	<script>
+	(function() {
+		var svg = document.getElementById('chronicles-union-svg');
+		if (svg) {
+			requestAnimationFrame(function() {
+				requestAnimationFrame(function() {
+					setTimeout(function() {
+						svg.classList.add('section-chronicles-bg__union--ready');
+					}, 120);
+				});
+			});
+		}
+	})();
+
 	(function() {
 		var svg = document.getElementById('chronicles-union-svg');
 		var profiles = document.querySelectorAll('.section-chronicles-bg__profile-wrap');

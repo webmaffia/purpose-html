@@ -109,6 +109,13 @@
 .section-chronicles-bg__profile-wrap {
 	pointer-events: auto;
 	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+/* Reveal after SMIL motion has applied (avoids first frame at top-left) */
+.section-chronicles-bg__union.section-chronicles-bg__union--ready .section-chronicles-bg__profile-wrap {
+	opacity: 1;
 }
 
 .section-chronicles-bg__profile-wrap image {
