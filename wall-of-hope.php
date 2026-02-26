@@ -29,8 +29,8 @@
                 <div class="wall__grid">
 
                     <!-- 1 -->
-                    <div class="card card--tall">
-                        <img src="assets/images/wall-of-hopes\Mugdhakumari Patel.jpg" alt="Mugdhakumari Patel">
+                    <div class="card card--1">
+                        <img src="assets/images/wall-of-hopes/Mughdha kumari Patel.png" alt="Mugdhakumari Patel">
                         <div class="card__content">
                             <h3>Mugdhakumari Patel</h3>
                             <p>PEK BD STAT – CRO</p>
@@ -39,8 +39,8 @@
                     </div>
 
                     <!-- 2 -->
-                    <div class="card">
-                        <img src="images/niravbhatt.png" alt="Nirav Bhatt">
+                    <div class="card card--2">
+                        <img src="assets/images/wall-of-hopes/Nirav Bhatt.png" alt="Nirav Bhatt">
                         <div class="card__content">
                             <h3>Nirav Bhatt</h3>
                             <p>Technical Training</p>
@@ -48,9 +48,14 @@
                         </div>
                     </div>
 
+                    <!-- Petal -->
+                     <div class="petal">
+                        <img src="assets/images/wall-of-hopes/shapes\Petal.png" />
+                     </div>
+
                     <!-- 3 -->
-                    <div class="card card--tall">
-                        <img src="images/kumarangovindasamy.png" alt="Kumaran Govindasamy">
+                    <div class="card card--3">
+                        <img src="assets/images/wall-of-hopes/Awadhkishor Bhadoriya.jpg" alt="Kumaran Govindasamy">
                         <div class="card__content">
                             <h3>Kumaran Govindasamy</h3>
                             <p>IPMG</p>
@@ -59,8 +64,8 @@
                     </div>
 
                     <!-- 4 -->
-                    <div class="card">
-                        <img src="images/meghnadixit.png" alt="Meghna Dixit">
+                    <div class="card card--4">
+                        <img src="assets/images/wall-of-hopes/Meghna Dixit.jpg" alt="Meghna Dixit">
                         <div class="card__content">
                             <h3>Meghna Dixit</h3>
                             <p>Mammalian – Upstream Development Team</p>
