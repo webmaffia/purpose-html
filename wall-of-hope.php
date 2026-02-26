@@ -29,8 +29,8 @@
                 <div class="wall__grid">
 
                     <!-- 1 -->
-                    <div class="card card--tall">
-                        <img src="assets/images/wall-of-hopes\Mugdhakumari Patel.jpg" alt="Mugdhakumari Patel">
+                    <div class="card card--tall card1">
+                       
                         <div class="card__content">
                             <h3>Mugdhakumari Patel</h3>
                             <p>PEK BD STAT – CRO</p>
@@ -39,8 +39,8 @@
                     </div>
 
                     <!-- 2 -->
-                    <div class="card">
-                        <img src="images/niravbhatt.png" alt="Nirav Bhatt">
+                    <div class="card card2">
+                   
                         <div class="card__content">
                             <h3>Nirav Bhatt</h3>
                             <p>Technical Training</p>
@@ -49,8 +49,8 @@
                     </div>
 
                     <!-- 3 -->
-                    <div class="card card--tall">
-                        <img src="images/kumarangovindasamy.png" alt="Kumaran Govindasamy">
+                    <div class="card card--tall card3">
+                    
                         <div class="card__content">
                             <h3>Kumaran Govindasamy</h3>
                             <p>IPMG</p>
@@ -59,8 +59,8 @@
                     </div>
 
                     <!-- 4 -->
-                    <div class="card">
-                        <img src="images/meghnadixit.png" alt="Meghna Dixit">
+                    <div class="card card4">
+                     
                         <div class="card__content">
                             <h3>Meghna Dixit</h3>
                             <p>Mammalian – Upstream Development Team</p>
@@ -69,8 +69,8 @@
                     </div>
 
                     <!-- 5 -->
-                    <div class="card card--wide">
-                        <img src="images/awadhkishor.png" alt="Awadhkishor Bhadoriya">
+                    <div class="card card--wide card5">
+                     
                         <div class="card__content">
                             <h3>Awadhkishor Bhadoriya</h3>
                             <p>IT Operations</p>
@@ -79,8 +79,8 @@
                     </div>
 
                     <!-- 6 -->
-                    <div class="card">
-                        <img src="images/amarnathprakash.png" alt="Amarnath Prakash">
+                    <div class="card card6">
+                      
                         <div class="card__content">
                             <h3>Amarnath Prakash</h3>
                             <p>Manufacturing</p>
@@ -89,8 +89,8 @@
                     </div>
 
                     <!-- 7 -->
-                    <div class="card">
-                        <img src="images/saritadagur.png" alt="Sarita Dagur">
+                    <div class="card card7">
+                    
                         <div class="card__content">
                             <h3>Sarita Dagur</h3>
                             <p>Mammalian – Upstream Development Team</p>
@@ -99,8 +99,8 @@
                     </div>
 
                     <!-- 8 -->
-                    <div class="card">
-                        <img src="images/fabiana.png" alt="Fabiana Goncalves">
+                    <div class="card card8">
+                     
                         <div class="card__content">
                             <h3>Fabiana Goncalves</h3>
                             <p>Quality Control</p>
@@ -109,8 +109,8 @@
                     </div>
 
                     <!-- 9 -->
-                    <div class="card">
-                        <img src="images/prasaths.png" alt="Prasath S">
+                    <div class="card card9">
+             
                         <div class="card__content">
                             <h3>Prasath S</h3>
                             <p>Field Force</p>
@@ -119,8 +119,8 @@
                     </div>
 
                     <!-- 10 -->
-                    <div class="card card--tall">
-                        <img src="images/kalpeshparab.png" alt="Kalpesh Parab">
+                    <div class="card card--tall card10">
+                      
                         <div class="card__content">
                             <h3>Kalpesh Parab</h3>
                             <p>Finance Shared Services</p>
@@ -129,8 +129,8 @@
                     </div>
 
                     <!-- 11 -->
-                    <div class="card">
-                        <img src="images/rajivpuri.png" alt="Rajiv Puri">
+                    <div class="card card11">
+                        
                         <div class="card__content">
                             <h3>Rajiv Puri</h3>
                             <p>API</p>
@@ -139,8 +139,7 @@
                     </div>
 
                     <!-- 12 -->
-                    <div class="card card--wide">
-                        <img src="images/ledisilaneassis.png" alt="Ledisilane Assis">
+                    <div class="card card--wide card12">
                         <div class="card__content">
                             <h3>Ledisilane Assis</h3>
                             <p>HR</p>
