@@ -214,6 +214,13 @@
   width: vw(560);
   height: vw(617);
   overflow: hidden;
+  margin: vw(80) auto;
+}
+
+@media (min-width: 2000px) {
+  .leadership__modal-left {
+    margin: vw(20) auto;
+  }
 }
 
 /* Gradient layer */
@@ -250,8 +257,6 @@
 .leadership__image-wrapper {
   position: relative;
   z-index: 1;
-  width: 90%;
-  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,6 +295,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: #006B07;
 }
 
 .leadership__modal-right h4 {

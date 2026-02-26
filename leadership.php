@@ -27,53 +27,6 @@
             <section class="leadership__employees-image-section">
                 <div class="leadership__employees-image-container">
 
-                    <div class="leadership__employee-card" data-name="CHRISTOPH FUNKE"
-                        data-role="Chief technical Operations Officer"
-                        data-quote="We’re building a resilient, digitized, and customer-centric supply chain - one that not only meets evolving regulatory requirements but stays anchored in improving patient outcomes worldwide."
-                        data-image="assets/images/leadership/Christoph Funke.png">
-                        <img fetchpriority="high" class="leadership__employee-image"
-                            src="assets/images/leadership/Christoph Funke.png" alt="Employee image 1" />
-                        <div class="leadership__employee-info">
-                            <h4>CHRISTOPH FUNKE</h4>
-                            <p>Chief technical Operations Officer</p>
-                        </div>
-                    </div>
-
-                    <div class="leadership__employee-card" data-name="CLAUS JEPSEN"
-                        data-role="President, Global Speciality"
-                        data-quote="We are building a future of focused growth. Every brand, every program we pursue, is a reaffirmation of our belief in therapies that matter and care that transforms. "
-                        data-image="assets/images/leadership/Claus Jepsen.png">
-                        <img fetchpriority="high" class="leadership__employee-image"
-                            src="assets/images/leadership/Claus Jepsen.png" alt="Employee image 2" />
-                        <div class="leadership__employee-info">
-                            <h4>Claus Jepsen</h4>
-                            <p>President, Global Speciality</p>
-                        </div>
-                    </div>
-
-                    <div class="leadership__employee-card" data-name="CYRUS KARKARIA"
-                        data-role="President, Biotech Business"
-                        data-quote="We invest in purpose-driven science. Our work in biosimilars focuses on making cutting-edge biologics more accessible – transforming hope into healing for patients around the world."
-                        data-image="assets/images/leadership/Cyrus karkaria (4).png">
-                        <img fetchpriority="high" class="leadership__employee-image"
-                            src="assets/images/leadership/Cyrus karkaria (4).png" alt="Employee image 3" />
-                        <div class="leadership__employee-info">
-                            <h4>Cyrus Karkaria</h4>
-                            <p>President, Biotech Business</p>
-                        </div>
-                    </div>
-
-                    <div class="leadership__employee-card" data-name="FABRICE EGROS"
-                        data-role="President, Corporate Development"
-                        data-quote="Strong relationships are foundational to sustainable healthcare. Through strategic partnerships and shared purpose, we are building an innovation-driven and patient-centric ecosystem where every stakeholder, across developed and emerging markets, thrives."
-                        data-image="assets/images/leadership/Dr Fabrice Egros.png">
-                        <img fetchpriority="high" class="leadership__employee-image"
-                            src="assets/images/leadership/Dr Fabrice Egros.png" alt="Employee image 4" />
-                        <div class="leadership__employee-info">
-                            <h4>Fabrice Egros</h4>
-                            <p>President, Corporate Development</p>
-                        </div>
-                    </div>
                     <div class="leadership__employee-card" data-name="MANJU DESHBANDHU GUPTA"
                         data-role="Chief technical Operations Officer"
                         data-quote="Driven by our commitment to business excellence and innovation, our goal is to be a trusted partner for quality medicines, transforming hope into healing."
@@ -85,6 +38,7 @@
                             <p>Chief technical Operations Officer</p>
                         </div>
                     </div>
+
                     <div class="leadership__employee-card" data-name="VINITA & NILESH GUPTA"
                         data-role="CEO & Managing Directors"
                         data-quote="At Lupin, we are not just manufacturers or marketers of medicines. Our Lupinytts are the catalysts, the agents of change, committed to accelerating, enabling and sparking positive change to the health of patients."
@@ -94,17 +48,6 @@
                         <div class="leadership__employee-info">
                             <h4>Vinita & Nilesh Gupta</h4>
                             <p>CEO & Managing Directors</p>
-                        </div>
-                    </div>
-                    <div class="leadership__employee-card" data-name="RAJEEV SIBAL"
-                        data-role="President, India Region Formulations"
-                        data-quote="Our commitment extends beyond therapeutic leadership — it’s about transforming lives through equitable access, deep patient engagement, and purpose-driven innovation. Every initiative brings us one step closer to a healthier, more inclusive world."
-                        data-image="assets/images/leadership/Rajeev Sibal.png">
-                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
-                            src="assets/images/leadership/Rajeev Sibal.png" alt="Employee image 1" />
-                        <div class="leadership__employee-info">
-                            <h4>Rajeev Sibal</h4>
-                            <p>President, India Region Formulations</p>
                         </div>
                     </div>
 
@@ -120,6 +63,30 @@
                         </div>
                     </div>
 
+                    <div class="leadership__employee-card" data-name="YASHWANT MAHADIK"
+                        data-role="President, Global Human Resources"
+                        data-quote="At Lupin, our people are at the heart of our purpose. We nurture talent with empathy, equip it with capability, and align it with our mission to heal and uplift lives."
+                        data-image="assets/images/leadership/Yashwant Mahadik.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Yashwant Mahadik.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Yashwant Mahadik</h4>
+                            <p>President, Global Human Resources</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="CHRISTOPH FUNKE"
+                        data-role="Chief technical Operations Officer"
+                        data-quote="We’re building a resilient, digitized, and customer-centric supply chain - one that not only meets evolving regulatory requirements but stays anchored in improving patient outcomes worldwide."
+                        data-image="assets/images/leadership/Christoph Funke.png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Christoph Funke.png" alt="Employee image 1" />
+                        <div class="leadership__employee-info">
+                            <h4>CHRISTOPH FUNKE</h4>
+                            <p>Chief technical Operations Officer</p>
+                        </div>
+                    </div>
+
                     <div class="leadership__employee-card" data-name="RANJANA PATHAK" data-role="Chief Quality Officer"
                         data-quote="At Lupin, quality is more than a standard - it’s our shared discipline and collective conscience. This unwavering commitment safeguards patients and builds trust worldwide."
                         data-image="assets/images/leadership/Dr Ranjana Pathak.png">
@@ -128,6 +95,54 @@
                         <div class="leadership__employee-info">
                             <h4>Ranjana Pathak</h4>
                             <p>Chief Quality Officer</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="FABRICE EGROS"
+                        data-role="President, Corporate Development"
+                        data-quote="Strong relationships are foundational to sustainable healthcare. Through strategic partnerships and shared purpose, we are building an innovation-driven and patient-centric ecosystem where every stakeholder, across developed and emerging markets, thrives."
+                        data-image="assets/images/leadership/Dr Fabrice Egros.png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Dr Fabrice Egros.png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Fabrice Egros</h4>
+                            <p>President, Corporate Development</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="CLAUS JEPSEN"
+                        data-role="President, Global Speciality"
+                        data-quote="We are building a future of focused growth. Every brand, every program we pursue, is a reaffirmation of our belief in therapies that matter and care that transforms. "
+                        data-image="assets/images/leadership/Claus Jepsen.png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Claus Jepsen.png" alt="Employee image 2" />
+                        <div class="leadership__employee-info">
+                            <h4>Claus Jepsen</h4>
+                            <p>President, Global Speciality</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="RAJEEV SIBAL"
+                        data-role="President, India Region Formulations"
+                        data-quote="Our commitment extends beyond therapeutic leadership — it’s about transforming lives through equitable access, deep patient engagement, and purpose-driven innovation. Every initiative brings us one step closer to a healthier, more inclusive world."
+                        data-image="assets/images/leadership/Rajeev Sibal.png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Rajeev Sibal.png" alt="Employee image 1" />
+                        <div class="leadership__employee-info">
+                            <h4>Rajeev Sibal</h4>
+                            <p>President, India Region Formulations</p>
+                        </div>
+                    </div>
+
+                    <div class="leadership__employee-card" data-name="THIERRY VOLLE"
+                        data-role="President, EMEA and Emerging Markets"
+                        data-quote="As we expand access across developed markets, we do so with agility, empathy, and an unwavering commitment to our purpose: healing. Grounded in therapeutic relevance and guided by proximity to patients, we continue to move forward - together - on our shared mission to catalyze healing."
+                        data-image="assets/images/leadership/Thierry Volle (1).png">
+                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
+                            src="assets/images/leadership/Thierry Volle (1).png" alt="Employee image 4" />
+                        <div class="leadership__employee-info">
+                            <h4>Thierry Volle</h4>
+                            <p>President, EMEA and Emerging Markets</p>
                         </div>
                     </div>
 
@@ -142,6 +157,7 @@
                             <p>President, Legal and Compliance, Canada, ANZ, and NEA business</p>
                         </div>
                     </div>
+
                     <div class="leadership__employee-card" data-name="SPIRO GAVARIS"
                         data-role="President, U.S. Generics"
                         data-quote="As the U.S. market evolves, Lupin is poised to lead with patient-centricity and a well-balanced portfolio. Our generics and complex generics don’t just drive our business — they advance our deeper purpose: expanding access to high-quality care for millions."
@@ -153,26 +169,16 @@
                             <p>President, U.S. Generics</p>
                         </div>
                     </div>
-                    <div class="leadership__employee-card" data-name="THIERRY VOLLE"
-                        data-role="President, EMEA and Emerging Markets"
-                        data-quote="As we expand access across developed markets, we do so with agility, empathy, and an unwavering commitment to our purpose: healing. Grounded in therapeutic relevance and guided by proximity to patients, we continue to move forward - together - on our shared mission to catalyze healing."
-                        data-image="assets/images/leadership/Thierry Volle (1).png">
-                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
-                            src="assets/images/leadership/Thierry Volle (1).png" alt="Employee image 4" />
+
+                    <div class="leadership__employee-card" data-name="CYRUS KARKARIA"
+                        data-role="President, Biotech Business"
+                        data-quote="We invest in purpose-driven science. Our work in biosimilars focuses on making cutting-edge biologics more accessible – transforming hope into healing for patients around the world."
+                        data-image="assets/images/leadership/Cyrus karkaria (4).png">
+                        <img fetchpriority="high" class="leadership__employee-image"
+                            src="assets/images/leadership/Cyrus karkaria (4).png" alt="Employee image 3" />
                         <div class="leadership__employee-info">
-                            <h4>Thierry Volle</h4>
-                            <p>President, EMEA and Emerging Markets</p>
-                        </div>
-                    </div>
-                    <div class="leadership__employee-card" data-name="YASHWANT MAHADIK"
-                        data-role="President, Global Human Resources"
-                        data-quote="At Lupin, our people are at the heart of our purpose. We nurture talent with empathy, equip it with capability, and align it with our mission to heal and uplift lives."
-                        data-image="assets/images/leadership/Yashwant Mahadik.png">
-                        <img fetchpriority="high" class="leadership__employee-image leadership__hidden"
-                            src="assets/images/leadership/Yashwant Mahadik.png" alt="Employee image 4" />
-                        <div class="leadership__employee-info">
-                            <h4>Yashwant Mahadik</h4>
-                            <p>President, Global Human Resources</p>
+                            <h4>Cyrus Karkaria</h4>
+                            <p>President, Biotech Business</p>
                         </div>
                     </div>
                 </div>
