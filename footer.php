@@ -117,6 +117,9 @@
         scripts.push(assets + '/build/front.js');
     } else {
         scripts.push(assets + '/build/inner.js');
+        if ( baseName === 'catalyst-chronicles.php' ) {
+            scripts.push(assets + '/build/front.js');
+        }
 
         switch (baseName) {
             case '':

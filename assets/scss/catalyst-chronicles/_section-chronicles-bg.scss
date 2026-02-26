@@ -113,15 +113,33 @@
 
 .section-chronicles-bg__profile-wrap image {
 	display: block;
+	width: vw(170);
+	height: vw(170);
+	x: vw(-85);
+	y: vw(-85);
 }
 
 .section-chronicles-bg__profile-border {
+	r: vw(85);
+	stroke: #0CC950;
+	stroke-width: 15;
+	fill: none;
+	opacity: 1;
+	pointer-events: none;
+}
+
+.section-chronicles-bg__profile-wrap:hover .section-chronicles-bg__profile-border {
+	stroke: #0CC950;
+	stroke-width: 15px;
+}
+
+.section-chronicles-bg__profile-play {
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 0.2s ease;
 }
 
-.section-chronicles-bg__profile-wrap:hover .section-chronicles-bg__profile-border {
+.section-chronicles-bg__profile-wrap:hover .section-chronicles-bg__profile-play {
 	opacity: 1;
 }
 
@@ -135,6 +153,17 @@
 	.section-chronicles-bg__svg {
 		top: vw(30, 414);
 		max-width: vw(400, 414);
+	}
+
+	.section-chronicles-bg__profile-wrap image {
+		width: vw(170, 414);
+		height: vw(170, 414);
+		x: -vw(85, 414);
+		y: -vw(85, 414);
+	}
+
+	.section-chronicles-bg__profile-border {
+		r: vw(85, 414);
 	}
 
 	.section-chronicles-bg__eyebrow {
@@ -156,4 +185,69 @@
 	.section-chronicles-bg__cta {
 		font-size: vw(18, 414);
 	}
+}
+
+/* Video popup */
+.chronicles-video-popup {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.chronicles-video-popup--open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.chronicles-video-popup__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.85);
+	cursor: pointer;
+}
+
+.chronicles-video-popup__inner {
+	position: relative;
+	width: 90%;
+	max-width: vw(900);
+	aspect-ratio: 16 / 9;
+	z-index: 1;
+}
+
+.chronicles-video-popup__close {
+	position: absolute;
+	top: vw(-50);
+	right: 0;
+	width: vw(44);
+	height: vw(44);
+	border: none;
+	background: #fff;
+	color: #333;
+	font-size: vw(28);
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	transition: background 0.2s, color 0.2s;
+}
+
+.chronicles-video-popup__close:hover {
+	background: #0CC950;
+	color: #fff;
+}
+
+.chronicles-video-popup__video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #000;
 }
