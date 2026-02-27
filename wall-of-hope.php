@@ -83,7 +83,7 @@
                 <div class="hopes__mosaic-item hopes__mosaic-item--top-left hopes__mosaic-item--bg-10">
                     <div class="hopes__mosaic-flip">
                         <div class="hopes__mosaic-front">
-                            <img class="hopes__mosaic-cardbg" src="assets/images/wall-of-hopes/cardsbg.svg" alt="" />
+                            <img class="hopes__mosaic-cardbg" src="assets/images/wall-of-hopes/cardsbg-right-center.svg" alt="" />
                             <img src="assets/images/wall-of-hopes/10.png" alt="" loading="lazy" />
                             <div class="hopes__mosaic-content">
                                 <h3>Kumaran Govindasamy</h3>
@@ -235,7 +235,7 @@
                 <div class="hopes__mosaic-item hopes__mosaic-item--top-left hopes__mosaic-item--bg-12">
                     <div class="hopes__mosaic-flip">
                         <div class="hopes__mosaic-front">
-                            <img class="hopes__mosaic-cardbg" src="assets/images/wall-of-hopes/cardsbg.svg" alt="" />
+                            <img class="hopes__mosaic-cardbg" src="assets/images/wall-of-hopes/cardsbg-right-center.svg" alt="" />
                             <img src="assets/images/wall-of-hopes/12.png" alt="" loading="lazy" />
                             <div class="hopes__mosaic-content">
                                 <h3>Kalpesh Parab</h3>
