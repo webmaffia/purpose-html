@@ -20,12 +20,12 @@
 		<section class="hero">
 			<div class="hero__poster" style="background-image: url('assets/images/hero/poster.png');"></div>
 			<!-- Desktop video: shown above 414px -->
-			<video class="hero__video hero__video--desktop" poster="assets/images/hero/poster.png" playsinline muted
+			<video class="hero__video hero__video--desktop" poster="assets/images/hero/poster.png" playsinline 
 				loop>
 				<source src="assets/videos/3-Our Purpose -Standalone -High Resolution.mp4" type="video/mp4" />
 			</video>
 			<!-- Mobile video: shown at 414px and below -->
-			<video class="hero__video hero__video--mobile" poster="assets/images/hero/poster.png" playsinline muted
+			<video class="hero__video hero__video--mobile" poster="assets/images/hero/poster.png" playsinline 
 				loop>
 				<source src="assets/videos/3-Our Purpose -Standalone -High Resolution.mp4" type="video/mp4" />
 			</video>
@@ -36,6 +36,12 @@
 				</span>
 				<span class="hero__play-wrap-inner" aria-hidden="true">
 					<img src="assets/images/homepage-icons/Playbutton.svg" alt="" class="hero__play" width="186"
+						height="186" />
+				</span>
+			</button>
+			<button type="button" class="hero__pause-wrap" aria-label="Pause video" hidden>
+				<span class="hero__pause-wrap-inner" aria-hidden="true">
+					<img src="assets/images/homepage-icons/Pausebutton.svg" alt="" class="hero__pause" width="186"
 						height="186" />
 				</span>
 			</button>
