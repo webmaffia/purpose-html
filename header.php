@@ -10,7 +10,7 @@
 		</button>
 		<div class="site-header__drawer" id="site-header__drawer" aria-hidden="true">
 			<nav class="site-header__nav-cards" aria-label="Main navigation">
-				<a href="index.php#leaders-speak" class="site-header__nav-card">
+				<a href="leadership.php" class="site-header__nav-card">
 					<img src="assets/images/homepage-icons/nav1.svg" alt="" width="170" height="149" />
 				</a>
 				<a href="catalyst-chronicles.php" class="site-header__nav-card">
@@ -21,7 +21,7 @@
 				</a>
 			</nav>
 			<ul class="site-header__drawer-list" aria-label="Main navigation">
-				<li><a href="index.php#leaders-speak">Leaders Speak</a></li>
+				<li><a href="leadership.php">Leaders Speak</a></li>
 				<li><a href="catalyst-chronicles.php">Catalyst Chronicles</a></li>
 				<li><a href="wall-of-hope.php">Wall of Hope</a></li>
 				<li><a href="index.php#news-events">News &amp; Events</a></li>
