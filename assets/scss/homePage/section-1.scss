@@ -1,8 +1,21 @@
-.wall {
+// Hero section ⭐
+.purpose__hero {
+  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-// Hero section ⭐
+.purpose__hero-image {
+  width: vw(1920);
+
+
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-bottom: vw(80);
+}
+
+// Wall of Hope hero
 .hopes__hero {
   width: 100%;
   overflow: hidden;
@@ -10,227 +23,369 @@
 }
 
 .hopes__hero-image {
-  width: vw(1920);
-  height: vw(850);
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+
   object-fit: cover;
   object-position: center;
   display: block;
-  margin-bottom: vw(80);
 }
 
-// Title ⭐
-.wall__title {
-  font-family: Inter;
+// Mosaic grid: 12 items, 3 columns, height from images
+.hopes__mosaic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 100px;
+}
+
+.hopes__mosaic-title {
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 108px;
+  font-style: normal;
   font-weight: 700;
-  font-style: Bold;
-  font-size: vw(108);
   line-height: 105%;
-  letter-spacing: 0%;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #006b07 0%, #00d10e 70%);
+  text-align: left;
+  background: linear-gradient(90deg, #006B07 0%, #00D10E 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: vw(90);
-  padding-left: vw(80);
+  margin-bottom: vw(40);
 }
 
-// on screen petal
-.petal img {
-  position: absolute;
-  width: vw(394.22);
-  height: vw(403.9);
-  left: vw(1382.91);
-  bottom: 78%;
-}
-
-// Card grid layout ⭐
-
-.wall__grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: vw(20);
-  padding: vw(30) vw(80) 0 vw(80);
-}
-
-.card {
-  position: relative;
-  border-radius: vw(16);
-  overflow: hidden;
-  background: #08a03f;
-  color: #fff;
-
-}
-
-// 1st card
-.card--1 {
-  width: vw(600);
-  height: vw(449);
-  background-color: #61d061;
-}
-.card--1 img {
-  object-fit: cover;
+.hopes__mosaic-grid {
+  width: 100%;
+  max-width: 100%;
   display: block;
-  transform: scaleX(-1);
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: vw(289);
-  height: vw(514);
-}
-.card--1 .card__content {
-  position: absolute;
-  padding: vw(20);
-  bottom: 5%;
-}
-.card--1 .card__content h3 {
-  font-family: Inter;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: vw(25);
-}
-.card--1 .card__content p {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
-  color: #2aff4b;
-}
-.card--1 .card__content span {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
+  column-count: 3;
+  column-gap: vw(20);
+  max-width: 100%;
+  width: 100%;
 }
 
-// 2nd image
-.card--2 {
-  width: vw(600);
-  height: vw(302);
-  background-color: #08a03f;
+.hopes__mosaic-item {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: vw(20);
+  border-radius: vw(10);
+  perspective: 1000px;
+
+  &:hover .hopes__mosaic-flip {
+    transform: rotateY(180deg);
+  }
 }
-.card--2 img {
+
+.hopes__mosaic-flip {
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.hopes__mosaic-front {
+  position: relative;
+  backface-visibility: hidden;
+  border-radius: vw(10);
+  overflow: hidden;
+
+  > img:not(.hopes__mosaic-cardbg) {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    border-radius: vw(10);
+  }
+}
+
+// Card background SVG – overlay on front (on top so it’s visible)
+.hopes__mosaic-cardbg {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: vw(302);
-  width: auto;
+  pointer-events: none;
+  z-index: 1;
+  width: 90%;
+  height: auto;
+  max-height: 60%;
   object-fit: contain;
-}
-.card--2 .card__content {
-  position: absolute;
-  padding: vw(20);
-  bottom: 5%;
-}
-.card--2 .card__content h3 {
-  font-family: Inter;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: vw(25);
-}
-.card--2 .card__content p {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
-  color: #2aff4b;
-}
-.card--2 .card__content span {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
+  object-position: top center;
+  opacity: 0.2;
 }
 
-// 3rd card
-.card--3 {
-  display: flex;
-  width: vw(600);
-  height: vw(589);
-  background-color: #08a03f;
+// Content bottom → SVG top center
+.hopes__mosaic-item--bottom-left .hopes__mosaic-cardbg,
+.hopes__mosaic-item--bottom-right .hopes__mosaic-cardbg {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.card--3 img {
-  position: absolute;
-  bottom: 0;
-  right: auto;
-  left: 0;
-  height: vw(465);
-  width: auto;
-  object-fit: contain;
-}
-.card--3 .card__content {
-  position: absolute;
-  padding: vw(20);
-  bottom: 5%;
+
+// Content top → SVG right center (cardsbg-right-center.svg, no rotation)
+.hopes__mosaic-item--top-left .hopes__mosaic-cardbg,
+.hopes__mosaic-item--top-right .hopes__mosaic-cardbg {
+  top: 50%;
   right: 0;
-}
-.card--3 .card__content h3 {
-  font-family: Inter;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: vw(25);
-}
-.card--3 .card__content p {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
-  color: #2aff4b;
-}
-.card--3 .card__content span {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
+  transform: translateY(-50%);
+  object-position: right center;
+  max-height: 75%;
 }
 
-// 4th card
-.card--4 {
-  display: flex;
-  flex-direction: row-reverse;
-  width: vw(600);
-  height: vw(388);
-  background-color: #14AB4A;
-}
-.card--4 img {
+// Front background modifiers (by card number 1–12)
+.hopes__mosaic-item--bg-1 .hopes__mosaic-front { background-color: #61D061; }
+.hopes__mosaic-item--bg-2 .hopes__mosaic-front { background-color: #008E34; }
+.hopes__mosaic-item--bg-3 .hopes__mosaic-front { background-color: #76BD81; }
+.hopes__mosaic-item--bg-4 .hopes__mosaic-front { background-color: #379145; }
+.hopes__mosaic-item--bg-5 .hopes__mosaic-front { background-color: #04BA26; }
+.hopes__mosaic-item--bg-6 .hopes__mosaic-front { background-color: #0F602C; }
+.hopes__mosaic-item--bg-7 .hopes__mosaic-front { background-color: #1DA04C; }
+.hopes__mosaic-item--bg-8 .hopes__mosaic-front { background-color: #008E34; }
+.hopes__mosaic-item--bg-9 .hopes__mosaic-front { background-color: #61D061; }
+.hopes__mosaic-item--bg-10 .hopes__mosaic-front { background-color: #32623A; }
+.hopes__mosaic-item--bg-11 .hopes__mosaic-front { background-color: #1DA04C; }
+.hopes__mosaic-item--bg-12 .hopes__mosaic-front { background-color: #04BA26; }
+
+.hopes__mosaic-back {
   position: absolute;
   top: 0;
   left: 0;
-  height: vw(465);
-  width: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #379145;
+  border-radius: vw(10);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: vw(24);
+  color: #fff;
+  overflow: hidden;
+}
+
+.hopes__mosaic-back-inner {
+  text-align: center;
+  font-size: vw(20);
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.hopes__mosaic-petals {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   object-fit: contain;
+  object-position: bottom center;
 }
-.card--4 .card__content {
+
+.hopes__mosaic-content {
   position: absolute;
-  padding: vw(20);
-  bottom: 5%;
-  right: 0;
-}
-.card--4 .card__content h3 {
+  z-index: 1;
+  width: 46%;
+  padding: 0.5rem;
   font-family: Inter;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: vw(25);
+
+  h3 {
+    font-size: vw(23);
+    color: #fff;
+
+  }
+
+  p {
+    font-size: vw(18);
+    color:  #2AFF4B  ;
+  }
+
+  span {
+    font-size: vw(18);
+    color: #fff;
+  }
 }
-.card--4 .card__content p {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
-  color: #2aff4b;
-}
-.card--4 .card__content span {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: vw(20);
+
+// Content position modifiers
+.hopes__mosaic-item--bottom-left .hopes__mosaic-content {
+  bottom: vw(40);
+  left: vw(40);
 }
 
-// 5th card
+.hopes__mosaic-item--bottom-right .hopes__mosaic-content {
+  bottom: vw(40);
+  right: vw(40);
+}
 
+.hopes__mosaic-item--top-left .hopes__mosaic-content {
+  top: vw(40);
+  left: vw(40);
+}
 
+// ----- Responsive: Wall of Hope mosaic (vw with resolution) -----
+@media all and (max-width: 1024px) {
+  .hopes__mosaic {
+    padding: vw(32, 1024) vw(40, 1024);
+  }
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("/assets/images/wall-of-hopes/shapes/Petal.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: vw(120);
-  pointer-events: none;
-  opacity: 1;
+  .hopes__mosaic-title {
+    font-size: vw(56, 1024);
+    margin-bottom: vw(24, 1024);
+  }
+
+  .hopes__mosaic-grid {
+    column-count: 2;
+    column-gap: vw(12, 1024);
+  }
+
+  .hopes__mosaic-item {
+    margin-bottom: vw(12, 1024);
+    border-radius: vw(8, 1024);
+  }
+
+  .hopes__mosaic-front img,
+  .hopes__mosaic-front {
+    border-radius: vw(8, 1024);
+  }
+
+  .hopes__mosaic-back {
+    padding: vw(16, 1024);
+    border-radius: vw(8, 1024);
+  }
+
+  .hopes__mosaic-back-inner {
+    font-size: vw(16, 1024);
+  }
+
+  .hopes__mosaic-content {
+    width: 55%;
+    padding: vw(6, 1024);
+
+    h3 {
+      font-size: vw(18, 1024);
+    }
+
+    p,
+    span {
+      font-size: vw(14, 1024);
+    }
+  }
+
+  .hopes__mosaic-item--bottom-left .hopes__mosaic-content,
+  .hopes__mosaic-item--bottom-right .hopes__mosaic-content {
+    bottom: vw(12, 1024);
+  }
+
+  .hopes__mosaic-item--bottom-left .hopes__mosaic-content {
+    left: vw(12, 1024);
+  }
+
+  .hopes__mosaic-item--bottom-right .hopes__mosaic-content {
+    right: vw(12, 1024);
+  }
+
+  .hopes__mosaic-item--top-left .hopes__mosaic-content {
+    top: vw(12, 1024);
+    left: vw(12, 1024);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hopes__mosaic {
+    padding: vw(24, 768) vw(20, 768);
+  }
+
+  .hopes__mosaic-title {
+    font-size: vw(40, 768);
+    margin-bottom: vw(20, 768);
+  }
+
+  .hopes__mosaic-grid {
+    column-count: 1;
+    column-gap: vw(12, 768);
+  }
+
+  .hopes__mosaic-item {
+    margin-bottom: vw(12, 768);
+  }
+
+  .hopes__mosaic-content {
+    width: 70%;
+  }
+
+  .hopes__mosaic-content h3 {
+    font-size: vw(20, 768);
+  }
+
+  .hopes__mosaic-content p,
+  .hopes__mosaic-content span {
+    font-size: vw(15, 768);
+  }
+}
+
+@media all and (max-width: 414px) {
+  .hopes__mosaic {
+    padding: vw(20, 414) vw(16, 414);
+  }
+
+  .hopes__mosaic-title {
+    font-size: vw(32, 414);
+    margin-bottom: vw(16, 414);
+  }
+
+  .hopes__mosaic-grid {
+    column-gap: vw(10, 414);
+  }
+
+  .hopes__mosaic-item {
+    margin-bottom: vw(10, 414);
+    border-radius: vw(6, 414);
+  }
+
+  .hopes__mosaic-front img,
+  .hopes__mosaic-front {
+    border-radius: vw(6, 414);
+  }
+
+  .hopes__mosaic-back {
+    padding: vw(12, 414);
+    border-radius: vw(6, 414);
+  }
+
+  .hopes__mosaic-back-inner {
+    font-size: vw(13, 414);
+  }
+
+  .hopes__mosaic-content {
+    width: 80%;
+    padding: vw(4, 414);
+
+    h3 {
+      font-size: vw(15, 414);
+    }
+
+    p,
+    span {
+      font-size: vw(12, 414);
+    }
+  }
+
+  .hopes__mosaic-item--bottom-left .hopes__mosaic-content,
+  .hopes__mosaic-item--bottom-right .hopes__mosaic-content {
+    bottom: vw(8, 414);
+  }
+
+  .hopes__mosaic-item--bottom-left .hopes__mosaic-content {
+    left: vw(8, 414);
+  }
+
+  .hopes__mosaic-item--bottom-right .hopes__mosaic-content {
+    right: vw(8, 414);
+  }
+
+  .hopes__mosaic-item--top-left .hopes__mosaic-content {
+    top: vw(8, 414);
+    left: vw(8, 414);
+  }
 }
