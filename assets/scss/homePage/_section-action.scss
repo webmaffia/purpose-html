@@ -1,8 +1,11 @@
 /* Section Our Purpose in Action – three cards; all units vw() */
 .section-action {
 	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
 	padding: vw(80) vw(85);
 	background: #fff;
+	overflow-x: hidden;
 }
 
 .section-action__title {
@@ -19,6 +22,8 @@
 	text-align: left;
 	text-transform: uppercase;
 	margin: 0 0 vw(24);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 .section-action__cards {
@@ -29,11 +34,13 @@
 	align-items: stretch;
 	gap: vw(32);
 	max-width: vw(1718);
+	width: 100%;
 	margin: 0 auto;
 	padding: vw(48) vw(40);
 	background: url('../images/homepage-icons/Line.svg') no-repeat center center;
 	background-size: 100% auto;
 	min-height: vw(410);
+	box-sizing: border-box;
 }
 
 .section-action__card {
@@ -45,6 +52,7 @@
 	align-items: center;
 	text-align: center;
 	padding: vw(40) vw(32);
+	box-sizing: border-box;
 }
 
 .section-action__icon {
@@ -70,6 +78,9 @@
 	font-weight: 400;
 	line-height: 1.5;
 	margin: 0 0 vw(24);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	max-width: 100%;
 }
 
 .section-action__btn {
@@ -93,52 +104,105 @@
 	background: #008f45;
 }
 
-/* Mobile: 414px */
-@include max_breakpoint(414px) {
+/* Tablet: up to 768px */
+@include max_breakpoint(768px) {
 	.section-action {
-		padding: vw(48, 414) vw(24, 414);
+		padding: vw(48, 768) vw(32, 768);
 	}
 
 	.section-action__title {
-		font-size: vw(108, 414);
-		margin-bottom: vw(16, 414);
+		font-size: vw(42, 768);
+		line-height: 1.15;
+		margin-bottom: vw(20, 768);
 	}
 
 	.section-action__cards {
 		flex-direction: column;
-		gap: vw(24, 414);
-		padding: vw(32, 414) vw(24, 414);
-		min-height: vw(350, 414);
-		background-size: 100% auto;
+		gap: vw(24, 768);
+		padding: vw(32, 768) vw(24, 768);
+		min-height: auto;
+		max-width: 100%;
 	}
 
 	.section-action__card {
 		flex: none;
 		width: 100%;
-		max-width: none;
+		max-width: 100%;
 		min-width: 0;
-		padding: vw(32, 414) vw(24, 414);
+		padding: vw(28, 768) vw(24, 768);
 	}
 
 	.section-action__icon {
-		width: vw(80, 414);
-		height: vw(80, 414);
-		margin-bottom: vw(16, 414);
+		width: vw(72, 768);
+		height: vw(72, 768);
+		margin-bottom: vw(16, 768);
 	}
 
 	.section-action__card-title {
-		font-size: vw(20, 414);
+		font-size: vw(20, 768);
+		margin-bottom: vw(12, 768);
+	}
+
+	.section-action__card-text {
+		font-size: vw(14, 768);
+		margin-bottom: vw(18, 768);
+	}
+
+	.section-action__btn {
+		padding: vw(12, 768) vw(22, 768);
+		font-size: vw(14, 768);
+		border-radius: vw(24, 768);
+	}
+}
+
+/* Mobile: 414px and below (includes 375px) */
+@include max_breakpoint(414px) {
+	.section-action {
+		padding: vw(32, 414) vw(20, 414);
+	}
+
+	.section-action__title {
+		font-size: vw(26, 414);
+		line-height: 1.2;
+		margin-bottom: vw(20, 414);
+	}
+
+	.section-action__cards {
+		flex-direction: column;
+		gap: vw(20, 414);
+		padding: vw(24, 414) vw(16, 414);
+		min-height: auto;
+		max-width: 100%;
+	}
+
+	.section-action__card {
+		flex: none;
+		width: 100%;
+		max-width: 100%;
+		min-width: 0;
+		padding: vw(24, 414) vw(16, 414);
+	}
+
+	.section-action__icon {
+		width: vw(64, 414);
+		height: vw(64, 414);
 		margin-bottom: vw(12, 414);
+	}
+
+	.section-action__card-title {
+		font-size: vw(18, 414);
+		margin-bottom: vw(10, 414);
 	}
 
 	.section-action__card-text {
 		font-size: vw(14, 414);
-		margin-bottom: vw(20, 414);
+		line-height: 1.45;
+		margin-bottom: vw(16, 414);
 	}
 
 	.section-action__btn {
-		padding: vw(12, 414) vw(24, 414);
-		font-size: vw(14, 414);
-		border-radius: vw(30, 414);
+		padding: vw(10, 414) vw(20, 414);
+		font-size: vw(13, 414);
+		border-radius: vw(20, 414);
 	}
 }

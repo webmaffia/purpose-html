@@ -4,13 +4,12 @@
 			<nav class="footer__nav" aria-label="Footer navigation">
 				<div class="footer__nav-col">
 					<a href="#" class="footer__link"><span class="footer__link-text">News &amp; Events</span></a>
-					<a href="#" class="footer__link"><span class="footer__link-text">We Are Catalysts</span></a>
 					<a href="#" class="footer__link"><span class="footer__link-text">Purpose Highlights</span></a>
+					<a href="#" class="footer__link"><span class="footer__link-text">Wall Of Hope</span></a>
 				</div>
 				<div class="footer__nav-col">
 					<a href="#" class="footer__link"><span class="footer__link-text">Leader Speak</span></a>
 					<a href="catalyst-chronicles.php" class="footer__link"><span class="footer__link-text">Catalyst Chronicles</span></a>
-					<a href="#" class="footer__link"><span class="footer__link-text">Wall Of Hope</span></a>
 				</div>
 			</nav>
 			<!-- <div class="footer__subscribe">
