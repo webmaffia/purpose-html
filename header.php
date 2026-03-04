@@ -9,6 +9,9 @@
 			<span class="site-header__hamburger-bar"></span>
 		</button>
 		<div class="site-header__drawer" id="site-header__drawer" aria-hidden="true">
+			<button type="button" class="site-header__drawer-close" id="site-header__drawer-close" aria-label="Close menu">
+				<img src="assets/images/leadership/shapes/Group 400.png" alt="" width="32" height="32" />
+			</button>
 			<nav class="site-header__nav-cards" aria-label="Main navigation">
 				<a href="leadership.php" class="site-header__nav-card">
 					<img src="assets/images/homepage-icons/nav1.svg" alt="" width="170" height="149" />
@@ -43,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var btn = document.querySelector('.site-header__hamburger');
 	var drawer = document.getElementById('site-header__drawer');
 	var overlay = document.querySelector('.site-header__overlay');
+	var closeBtn = document.getElementById('site-header__drawer-close');
 	var body = document.body;
 	function open() {
 		body.classList.add('site-header-menu-open');
@@ -59,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (btn && drawer) {
 		btn.addEventListener('click', function() { body.classList.contains('site-header-menu-open') ? close() : open(); });
 		if (overlay) overlay.addEventListener('click', close);
+		if (closeBtn) closeBtn.addEventListener('click', close);
 		drawer.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', close); });
 	}
 });

@@ -24,11 +24,10 @@
 .site-header__hamburger {
 	display: none;
 	flex-shrink: 0;
-	width: 48px;
-	height: 48px;
+	width: 40px;
 	padding: 12px;
 	border: none;
-	background: rgba(8, 160, 63, 0.8);
+	background: transparent;
 	border-radius: 8px;
 	cursor: pointer;
 	flex-direction: column;
@@ -67,6 +66,10 @@ body.site-header-menu-open .site-header__hamburger-bar:nth-child(3) {
 	justify-content: space-between;
 	gap: vw(40);
 	min-width: 0;
+}
+
+.site-header__drawer-close {
+	display: none;
 }
 
 /* Mobile-only list (no icons); hidden on desktop */
@@ -228,6 +231,29 @@ body.site-header-menu-open .site-header__hamburger-bar:nth-child(3) {
 		overflow-y: auto;
 	}
 
+	.site-header__drawer-close {
+		display: flex;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+
+		img {
+			width: 32px;
+			height: 32px;
+			display: block;
+			filter: brightness(0) invert(1);
+		}
+	}
+
 	body.site-header-menu-open .site-header__drawer {
 		transform: translateX(0);
 	}
@@ -288,20 +314,20 @@ body.site-header-menu-open .site-header__hamburger-bar:nth-child(3) {
 /* Mobile: 414px base for vw */
 @include max_breakpoint(414px) {
 	.site-header {
-		height: vw(164, 414);
+		width: 100%;
+		height: auto !important;
 		padding: vw(16, 414) vw(20, 414);
 		flex-wrap: wrap;
 	}
 
 	.site-header__inner {
-		flex-wrap: wrap;
-		gap: vw(16, 414);
-		justify-content: center;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.site-header__logo {
-		width: vw(85, 414);
-		height: vw(102, 414);
+		width: vw(40, 414);
+		height: auto !important;
 	}
 
 	.site-header__nav-cards {
