@@ -8,11 +8,12 @@
 .login {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  width: vw(1920);
+  height: 100%;
 }
 
 .login__hero {
-  flex: 1 1 60%;
+  flex: 1 1 50%;
   position: relative;
   display: flex;
   align-items: center;
@@ -36,38 +37,41 @@
 }
 
 .login__logo img {
-  width: vw(75);
+  width: vw(84.081);
   height: auto;
-  display: block;
 }
 
 .login__hero-tagline-wrap {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 90%;
-  padding: 0 vw(48);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  padding: 0 vw(50);
 }
 
 .login__tagline {
   color: #fff;
   font-family: Inter;
-  font-size: vw(40);
+  font-size: vw(64);
   font-style: normal;
   font-weight: 700;
-  line-height: vw(42);
+  line-height: vw(67.2);
   text-transform: uppercase;
+}
+
+.login__para {
+  color: #fff;
+  font-family: Inter;
+  font-size: vw(20);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: vw(8);
 }
 
 /* Right: Login panel (~35–40%) */
 .login__panel {
-  flex: 1 1 40%;
+  flex: 1 1 50%;
   height: 100%;
-  min-height: 0;
-  min-width: vw(320);
   position: relative;
   background: #fff;
   display: flex;
@@ -78,41 +82,25 @@
 
 .login__petals {
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
   pointer-events: none;
   z-index: 0;
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-end;
+  opacity: 1;
 }
 
-.login__petals-img--mobile {
+.login__mobile-petals-img {
   display: none;
 }
 
-.login__petals-img--desktop {
-  display: block;
-}
-
 .login__petals-img {
-  height: 100%;
-  min-height: 100%;
-  width: auto;
-  object-fit: contain;
-  object-position: 100% 50%;
-  opacity: 0.1;
+  width: 100%;
+  height: 100dvh;
 }
 
 /* Form area – centered in panel so button sits in center of petal */
 .login__form-wrap {
   position: relative;
-  left: 12%;
   z-index: 1;
-  width: 100%;
-  max-width: vw(320);
   padding: vw(12);
 }
 
@@ -126,31 +114,31 @@
   background: #08a03f;
   color: #fff;
   border: none;
-  border-radius: vw(2.776);
+  border-radius: vw(7.116);
   cursor: pointer;
-  transition: background 0.2s ease;
-  box-shadow: 0 vw(2) vw(8) rgba(0, 169, 80, 0.3);
+  position: relative;
+  left: vw(20);
+  transition: background 0.3s ease-in-out;
+}
+
+.login__btn-microsoft:hover {
+  background: #0a8c35;
 }
 
 .login__form-wrap span {
   color: #fff;
   text-align: center;
   font-family: Inter;
-  font-size: vw(13.65);
+  font-size: vw(34.99);
   font-style: normal;
   font-weight: 500;
-  line-height: vw(18.059);
-}
-
-.login__btn-text--short {
-  display: none;
+  line-height: vw(46.29);
 }
 
 .login__btn-icon {
-  flex-shrink: 0;
-  width: vw(21);
-  height: vw(21);
-  display: block;
+  width: vw(32.737);
+  height: vw(34.459);
+  aspect-ratio: 19/20;
 }
 
 /* Tablet: 768px – banner 60% height, panel 40% with petal top-to-bottom; button centered on middle petal, smaller */
@@ -165,29 +153,33 @@
   }
 
   .login__logo {
-    top: vw(20, 414);
-    left: vw(16, 414);
+    top: vw(20, 768);
+    left: vw(16, 768);
   }
 
   .login__logo img {
-    width: vw(44, 414);
+    width: vw(55, 768);
   }
 
   .login__hero-tagline-wrap {
-    padding: 0 vw(16, 414);
+    padding: 0 vw(30, 768);
   }
 
-  .login__tagline{
+  .login__tagline {
     font-size: vw(30, 768);
-    line-height: 1.2;
+    line-height: 1.15;
+  }
+
+  .login__para {
+    font-size: vw(12, 768);
   }
 
   .login__hero {
-    flex: 1 1 60%;
+    flex: 1 1 50%;
   }
 
   .login__panel {
-    flex: 1 1 40%;
+    flex: 1 1 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,43 +188,36 @@
 
   .login__petals {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
-    align-items: stretch;
     justify-content: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
   }
 
-  .login__petals-img--desktop {
+  .login__petals-img {
     display: none;
   }
 
-  .login__petals-img--mobile {
+  .login__mobile-petals-img {
     display: block;
-    width: auto;
-    height: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    opacity: 0.5;
+    width: 100vw;
   }
 
   .login__form-wrap {
     position: relative;
-    left: 0;
     z-index: 1;
-    width: 75%;
-    max-width: vw(220, 768);
-    padding: 0 vw(16, 768);
-    margin: 0;
+    padding: 0 vw(8, 768);
     align-self: center;
   }
 
   .login__btn-microsoft {
     padding: vw(12, 768) vw(16, 768);
-    font-size: vw(12, 768);
-    border-radius: vw(2.2, 768);
-}
+    gap: vw(12, 768);
+    border-radius: vw(4.2, 768);
+    width: 100%;
+    left: 0;
+  }
 
   .login__btn-icon {
     width: vw(16, 768);
@@ -240,7 +225,8 @@
   }
 
   .login__form-wrap span {
-    font-size: vw(12, 768);
+    font-size: 20px;
+    padding: 5px;
   }
 }
 
@@ -264,12 +250,17 @@
   }
 
   .login__hero-tagline-wrap {
-    padding: 0 vw(16, 414);
+    padding: 0 vw(18, 414);
   }
 
   .login__tagline {
-    font-size: vw(20, 414);
+    font-size: vw(14, 414);
     line-height: 1.2;
+  }
+
+  .login__para {
+    font-size: vw(12, 414);
+    margin-top: vw(6, 414);
   }
 
   .login__petals-img--mobile {
@@ -281,120 +272,25 @@
 
   .login__form-wrap {
     width: auto;
+    position: relative;
   }
 
   .login__btn-microsoft {
     padding: vw(8, 414) vw(14, 414);
-    font-size: vw(12, 414);
+    font-size: vw(16, 414);
     gap: vw(12, 414);
     border-radius: vw(2.2, 414);
-}
+    left: 0;
+  }
 
   .login__btn-icon {
     width: vw(14, 414);
     height: vw(14, 414);
   }
 
-  .login__btn-text--full {
-    display: none;
-  }
-
-  .login__btn-text--short {
-    display: inline;
-  }
-
   .login__form-wrap span {
-    font-size: vw(12, 414);
-    line-height: 1.1;
-  }
-}
-
-/* Tablet: 768px – banner 60% height, panel 40% with petal top-to-bottom; button centered on middle petal, smaller */
-@include sm-desktop {
-  body.login-page {
-    overflow: hidden;
-  }
-
-  .login {
-    overflow: hidden;
-  }
-
-  .login__logo {
-    top: vw(20, 414);
-    left: vw(16, 414);
-  }
-
-  .login__logo img {
-    width: vw(38, 414);
-  }
-
-  .login__hero-tagline-wrap {
-    padding: 0 vw(16, 414);
-  }
-
-  .login__tagline{
-    font-size: vw(30, 768);
-    line-height: 1.2;
-  }
-
-  .login__hero {
-    flex: 1 1 60%;
-  }
-
-  .login__panel {
-    flex: 1 1 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .login__petals {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  .login__petals-img--desktop {
-    display: none;
-  }
-
-  .login__petals-img--mobile {
-    display: block;
-    width: auto;
-    height: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    opacity: 0.5;
-  }
-
-  .login__form-wrap {
-    position: relative;
-    left: 0;
-    z-index: 1;
-    width: 75%;
-    max-width: vw(220, 768);
-    padding: 0 vw(16, 768);
-    margin: 0;
-    align-self: center;
-  }
-
-  .login__btn-microsoft {
-    padding: vw(12, 768) vw(16, 768);
-    font-size: vw(12, 768);
-    border-radius: vw(2.2, 768);
-}
-
-  .login__btn-icon {
-    width: vw(16, 768);
-    height: vw(16, 768);
-  }
-
-  .login__form-wrap span {
-    font-size: vw(12, 768);
+    font-size: 18px;
+    padding: 10px;
+    
   }
 }
