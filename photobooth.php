@@ -71,7 +71,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
 
@@ -82,20 +81,21 @@
 
             <!-- Left Content -->
             <div class="paint-purpose__content">
+                <img src="assets/images/photobooth/shapes/BG Icon.png" alt="">
                 <h2>PAINT OUR<br> PURPOSE</h2>
 
                 <div class="paint-purpose__locations">
-                    <span class="tag">UK</span>
-                    <span class="tag">Somerset, New Jersey, US</span>
-                    <span class="tag highlight">Global HR Offsite, India</span>
+                    <span class="tag" data-location="uk">UK</span>
+                    <span class="tag" data-location="somerset">Somerset, New Jersey, US</span>
+                    <span class="tag highlight" data-location="india">Global HR Offsite, India</span>
                 </div>
             </div>
 
-            <!-- Right Image Grid -->
-            <div class="paint-purpose__images">
-                <img src="assets/images/purpose/paint1.png" alt="">
-                <img src="assets/images/purpose/paint2.png" alt="">
-                <img src="assets/images/purpose/paint3.png" alt="">
+            <!-- Right Image Grid (images update on location tag click) -->
+            <div class="paint-purpose__images" id="paint-purpose-images">
+                <img src="assets/images/photobooth/HR-1.png" alt="">
+                <img src="assets/images/photobooth/HR-2.png" alt="">
+                <img src="assets/images/photobooth/HR-3.png" alt="">
             </div>
 
         </div>
@@ -127,6 +127,54 @@
     }, 3000);
 
     updateCarousel();
+
+    // PAINT OUR PURPOSE: location tags switch images with smooth animation
+    (function () {
+        var imageSets = {
+            uk: [
+                'assets/images/photobooth/HR-1.png',
+                'assets/images/photobooth/HR-2.png',
+                'assets/images/photobooth/HR-3.png'
+            ],
+            somerset: [
+                'assets/images/photobooth/HR-1.png',
+                'assets/images/photobooth/HR-2.png',
+                'assets/images/photobooth/HR-3.png'
+            ],
+            india: [
+                'assets/images/photobooth/HR-1.png',
+                'assets/images/photobooth/HR-2.png',
+                'assets/images/photobooth/HR-3.png'
+            ]
+        };
+
+        var container = document.getElementById('paint-purpose-images');
+        var tags = document.querySelectorAll('.paint-purpose__locations .tag');
+        var imgs = container ? container.querySelectorAll('img') : [];
+
+        function setImages(urls) {
+            if (!container || !urls || urls.length !== imgs.length) return;
+            container.classList.add('is-transitioning');
+            setTimeout(function () {
+                urls.forEach(function (url, i) {
+                    if (imgs[i]) imgs[i].src = url;
+                });
+                requestAnimationFrame(function () {
+                    container.classList.remove('is-transitioning');
+                });
+            }, 400);
+        }
+
+        tags.forEach(function (tag) {
+            tag.addEventListener('click', function () {
+                var loc = this.getAttribute('data-location');
+                if (!loc || !imageSets[loc]) return;
+                tags.forEach(function (t) { t.classList.remove('highlight'); });
+                this.classList.add('highlight');
+                setImages(imageSets[loc]);
+            });
+        });
+    })();
 </script>
 
 </html>
