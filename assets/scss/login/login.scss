@@ -1,0 +1,400 @@
+/* Login page – split layout: hero left, login + petals right; all units vw() */
+
+.login-page {
+  margin: 0;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.login__hero {
+  flex: 1 1 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.login__hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login__logo {
+  position: absolute;
+  top: vw(30);
+  left: vw(30);
+  z-index: 2;
+}
+
+.login__logo img {
+  width: vw(75);
+  height: auto;
+  display: block;
+}
+
+.login__hero-tagline-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 90%;
+  padding: 0 vw(48);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.login__tagline {
+  color: #fff;
+  font-family: Inter;
+  font-size: vw(40);
+  font-style: normal;
+  font-weight: 700;
+  line-height: vw(42);
+  text-transform: uppercase;
+}
+
+/* Right: Login panel (~35–40%) */
+.login__panel {
+  flex: 1 1 40%;
+  height: 100%;
+  min-height: 0;
+  min-width: vw(320);
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login__petals {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.login__petals-img--mobile {
+  display: none;
+}
+
+.login__petals-img--desktop {
+  display: block;
+}
+
+.login__petals-img {
+  height: 100%;
+  min-height: 100%;
+  width: auto;
+  object-fit: contain;
+  object-position: 100% 50%;
+  opacity: 0.1;
+}
+
+/* Form area – centered in panel so button sits in center of petal */
+.login__form-wrap {
+  position: relative;
+  left: 12%;
+  z-index: 1;
+  width: 100%;
+  max-width: vw(320);
+  padding: vw(12);
+}
+
+.login__btn-microsoft {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: vw(12);
+  width: 100%;
+  padding: vw(14) vw(24);
+  background: #08a03f;
+  color: #fff;
+  border: none;
+  border-radius: vw(2.776);
+  cursor: pointer;
+  transition: background 0.2s ease;
+  box-shadow: 0 vw(2) vw(8) rgba(0, 169, 80, 0.3);
+}
+
+.login__form-wrap span {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: vw(13.65);
+  font-style: normal;
+  font-weight: 500;
+  line-height: vw(18.059);
+}
+
+.login__btn-text--short {
+  display: none;
+}
+
+.login__btn-icon {
+  flex-shrink: 0;
+  width: vw(21);
+  height: vw(21);
+  display: block;
+}
+
+/* Tablet: 768px – banner 60% height, panel 40% with petal top-to-bottom; button centered on middle petal, smaller */
+@include tablet {
+  body.login-page {
+    overflow: hidden;
+  }
+
+  .login {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .login__logo {
+    top: vw(20, 414);
+    left: vw(16, 414);
+  }
+
+  .login__logo img {
+    width: vw(44, 414);
+  }
+
+  .login__hero-tagline-wrap {
+    padding: 0 vw(16, 414);
+  }
+
+  .login__tagline{
+    font-size: vw(30, 768);
+    line-height: 1.2;
+  }
+
+  .login__hero {
+    flex: 1 1 60%;
+  }
+
+  .login__panel {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .login__petals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .login__petals-img--desktop {
+    display: none;
+  }
+
+  .login__petals-img--mobile {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    opacity: 0.5;
+  }
+
+  .login__form-wrap {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    width: 75%;
+    max-width: vw(220, 768);
+    padding: 0 vw(16, 768);
+    margin: 0;
+    align-self: center;
+  }
+
+  .login__btn-microsoft {
+    padding: vw(12, 768) vw(16, 768);
+    font-size: vw(12, 768);
+    border-radius: vw(2.2, 768);
+}
+
+  .login__btn-icon {
+    width: vw(16, 768);
+    height: vw(16, 768);
+  }
+
+  .login__form-wrap span {
+    font-size: vw(12, 768);
+  }
+}
+
+/* Mobile: 540px – banner 60%, panel 40%, petal fills panel; button on middle petal, smaller */
+@include mobile {
+  .login__hero {
+    order: 1;
+  }
+
+  .login__panel {
+    order: 2;
+  }
+
+  .login__logo {
+    top: vw(20, 414);
+    left: vw(16, 414);
+  }
+
+  .login__logo img {
+    width: vw(44, 414);
+  }
+
+  .login__hero-tagline-wrap {
+    padding: 0 vw(16, 414);
+  }
+
+  .login__tagline {
+    font-size: vw(20, 414);
+    line-height: 1.2;
+  }
+
+  .login__petals-img--mobile {
+    width: auto;
+    height: 100%;
+    min-height: 100%;
+    object-position: center bottom;
+  }
+
+  .login__form-wrap {
+    width: auto;
+  }
+
+  .login__btn-microsoft {
+    padding: vw(8, 414) vw(14, 414);
+    font-size: vw(12, 414);
+    gap: vw(12, 414);
+    border-radius: vw(2.2, 414);
+}
+
+  .login__btn-icon {
+    width: vw(14, 414);
+    height: vw(14, 414);
+  }
+
+  .login__btn-text--full {
+    display: none;
+  }
+
+  .login__btn-text--short {
+    display: inline;
+  }
+
+  .login__form-wrap span {
+    font-size: vw(12, 414);
+    line-height: 1.1;
+  }
+}
+
+/* Tablet: 768px – banner 60% height, panel 40% with petal top-to-bottom; button centered on middle petal, smaller */
+@include sm-desktop {
+  body.login-page {
+    overflow: hidden;
+  }
+
+  .login {
+    overflow: hidden;
+  }
+
+  .login__logo {
+    top: vw(20, 414);
+    left: vw(16, 414);
+  }
+
+  .login__logo img {
+    width: vw(38, 414);
+  }
+
+  .login__hero-tagline-wrap {
+    padding: 0 vw(16, 414);
+  }
+
+  .login__tagline{
+    font-size: vw(30, 768);
+    line-height: 1.2;
+  }
+
+  .login__hero {
+    flex: 1 1 60%;
+  }
+
+  .login__panel {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .login__petals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .login__petals-img--desktop {
+    display: none;
+  }
+
+  .login__petals-img--mobile {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    opacity: 0.5;
+  }
+
+  .login__form-wrap {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    width: 75%;
+    max-width: vw(220, 768);
+    padding: 0 vw(16, 768);
+    margin: 0;
+    align-self: center;
+  }
+
+  .login__btn-microsoft {
+    padding: vw(12, 768) vw(16, 768);
+    font-size: vw(12, 768);
+    border-radius: vw(2.2, 768);
+}
+
+  .login__btn-icon {
+    width: vw(16, 768);
+    height: vw(16, 768);
+  }
+
+  .login__form-wrap span {
+    font-size: vw(12, 768);
+  }
+}
