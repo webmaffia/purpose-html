@@ -396,29 +396,12 @@
 }
 
 /*  PURPOSE PHOTOBOOTH SECTION 📷 */
-
-// Hero
-.purposebooth-hero {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.purposebooth-hero-image {
-  width: vw(1920);
-  height: vw(850);
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
 // Title
 .purpose-photobooth__header {
   position: relative;
   font-size: vw(108);
   font-weight: 700;
-  background-image: linear-gradient(to left, #006b07, #00d10e);
+  background: linear-gradient(to right, #006b07, #00d10e);
   background-clip: text;
   color: transparent;
   text-transform: uppercase;
@@ -428,12 +411,26 @@
   margin-bottom: vw(30);
 }
 
-// Carousel
+/* GREEN BACKGROUND SECTION */
+
 .purpose-photobooth__content {
-  width: vw(1920);
-  height: vw(842);
-  background: linear-gradient(90deg, #03732c 0%, #06a33f 53.91%, #03b544 100%);
+  position: relative;
+  width: 100%;
+  min-height: vw(842);
+  background: linear-gradient(
+    306deg,
+    #003313 0.43%,
+    #0a6129 23.99%,
+    #036928 47.56%,
+    #125d2d 73.56%,
+    #009938 99.57%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* FILTER BUTTONS */
 
 .purpose-photobooth__filters {
   width: 100%;
@@ -453,77 +450,82 @@
   cursor: pointer;
   color: #fff;
   border-radius: vw(10);
-  border: vw(0.908) solid #fff;
-  transition: all 0.3s ease;
-  padding: 10px 15px;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+  border: vw(0.9) solid #fff;
+  padding: vw(10) vw(15);
   font-family: Inter;
   font-size: vw(35);
-  font-style: normal;
   font-weight: 500;
   line-height: 105%;
+  transition: all 0.3s ease;
 }
 
 .filter-btn.active {
   background-color: #fff;
   color: #017208;
-  border: vw(0.908) solid #fff;
-  box-shadow: 0 vw(3.631) vw(3.631) 0 rgba(0, 0, 0, 0.25);
+  border: vw(0.9) solid #fff;
+  box-shadow: 0 vw(3.6) vw(3.6) rgba(0, 0, 0, 0.25);
 }
 
-.purpose-carousel {
-  width: 100%;
-  height: vw(420);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 2000px;
-  overflow: hidden;
-}
-
-.purpose-carousel__track {
-  width: vw(620);
-  height: vw(420);
+/* CAROUSEL CONTAINER */
+.carousel__container {
   position: relative;
-  transform-style: preserve-3d;
-  animation: purposeRotate 18s infinite linear;
+  width: 320px;
+  margin: 100px auto;
+  perspective: 1000px;
 }
 
-.purpose-carousel__item {
+.carousel {
   position: absolute;
-  width: vw(620);
-  height: vw(420);
-  left: 50%;
-  top: 50%;
-  transform-style: preserve-3d;
-}
-
-.purpose-carousel__item img {
   width: 100%;
   height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.6s ease;
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
   object-fit: cover;
+  // box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-.purpose-carousel__item:nth-child(1) {
-  transform: translate(-50%, -50%) rotateY(0deg) translateZ(vw(800));
+.carousel__face:nth-child(1) {
+  background-image: url("../images/hero/photobooth-hero.png");
+}
+.carousel__face:nth-child(2) {
+  background-image: url("../images/hero/photobooth-hero.png");
+}
+.carousel__face:nth-child(3) {
+  background-image: url("../images/hero/photobooth-hero.png");
+}
+.carousel__face:nth-child(4) {
+  background-image: url("../images/hero/photobooth-hero.png");
+}
+.carousel__face:nth-child(5) {
+  background-image: url("../images/hero/photobooth-hero.png");
 }
 
-.purpose-carousel__item:nth-child(2) {
-  transform: translate(-50%, -50%) rotateY(72deg) translateZ(vw(800));
+.carousel:hover {
+  animation-play-state: paused;
 }
 
-.purpose-carousel__item:nth-child(3) {
-  transform: translate(-50%, -50%) rotateY(144deg) translateZ(vw(800));
-}
-
-.purpose-carousel__item:nth-child(4) {
-  transform: translate(-50%, -50%) rotateY(216deg) translateZ(vw(800));
-}
-
-.purpose-carousel__item:nth-child(5) {
-  transform: translate(-50%, -50%) rotateY(288deg) translateZ(vw(800));
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 /* PAINT OUR PURPOSE SECTION */
@@ -537,29 +539,35 @@
 }
 
 .paint-purpose__container {
-  max-width: vw(1720);
+  position: relative;
   margin: 0 auto;
   display: flex;
   align-items: stretch;
   gap: vw(60);
   flex-wrap: wrap;
-  overflow: hidden;
+}
+
+.svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    max-width: vw(1200);
+    height: auto;
+  }
 }
 
 .paint-purpose__content {
-  flex: none;
+  flex: 1 1 vw(450);
   max-width: 100%;
-  min-width: 0;
   position: relative;
   padding: vw(40) 0 vw(40) vw(40);
   box-sizing: border-box;
-
-  > img:first-child {
-    position: absolute;
-    pointer-events: none;
-    z-index: 0;
-    width: vw(1747.51);
-  }
+  margin-top: vw(150);
 
   h2 {
     position: relative;
@@ -658,9 +666,7 @@
 }
 
 .paint-purpose__images img:nth-child(3) {
-  grid-column: 2;
-  grid-row: 1 / -1;
-  align-self: stretch;
+  grid-row: 1 / span 2;
 }
 
 // Tablet
@@ -676,13 +682,11 @@
     height: vw(322, 768);
     max-width: 100%;
     padding: vw(32, 768) 0 vw(32, 768) vw(24, 768);
+    margin-top: vw(40, 768);
   }
 
-  .paint-purpose__content > img:first-child {
-    width: vw(320, 768);
-    max-width: 85%;
-    top: vw(16, 768);
-    opacity: 0.32;
+  .svg {
+    width: vw(485, 768);
   }
 
   .paint-purpose__content h2 {
@@ -726,6 +730,7 @@
     min-height: vw(243, 414);
     max-width: 100%;
     padding: vw(24, 414) 0 vw(24, 414) vw(16, 414);
+    margin-top: vw(40, 414);
   }
 
   .paint-purpose__content h2 {
@@ -733,11 +738,8 @@
     margin-bottom: vw(24, 414);
   }
 
-  .paint-purpose__content > img:first-child {
-    width: 75%;
-    max-width: vw(280, 414);
-    top: vw(12, 414);
-    opacity: 0.3;
+  .svg {
+    width: vw(385, 414);
   }
 
   .paint-purpose__locations .tag {
@@ -745,7 +747,7 @@
     padding: vw(10, 414) vw(16, 414);
     border-radius: vw(4, 414);
 
-    &.highlight{
+    &.highlight {
       font-size: vw(16, 414);
       padding: vw(10, 414) vw(16, 414);
     }
@@ -773,5 +775,11 @@
   .paint-purpose__images img:nth-child(3) {
     grid-column: auto;
     grid-row: auto;
+  }
+}
+
+@include sm-desktop() {
+  .svg {
+    width: vw(650, 1024);
   }
 }

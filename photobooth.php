@@ -12,7 +12,6 @@
     <!-- Header -->
     <?php require_once 'header.php' ?>
 
-    <!-- Photos -->
     <!-- HERO SECTION -->
     <section class="purposebooth-hero">
         <img class="purposebooth-hero-image" src="assets/images/hero/photobooth-hero.png" alt="Hero section image"
@@ -41,33 +40,13 @@
             </div>
 
             <!-- 3D Carousel Area -->
-            <div class="purpose-carousel">
-                <div class="purpose-carousel__track">
-                    <div class="purpose-carousel__item">
-                        <div class="purpsoe-carousel__inner">
-                            <img src="assets/images/hero/photobooth-hero.png" alt="">
-                        </div>
-                    </div>
-                    <div class="purpose-carousel__item">
-                        <div class="purpsoe-carousel__inner">
-                            <img src="assets/images/hero/photobooth-hero.png" alt="">
-                        </div>
-                    </div>
-                    <div class="purpose-carousel__item">
-                        <div class="purpsoe-carousel__inner">
-                            <img src="assets/images/hero/photobooth-hero.png" alt="">
-                        </div>
-                    </div>
-                    <div class="purpose-carousel__item">
-                        <div class="purpsoe-carousel__inner">
-                            <img src="assets/images/hero/photobooth-hero.png" alt="">
-                        </div>
-                    </div>
-                    <div class="purpose-carousel__item">
-                        <div class="purpsoe-carousel__inner">
-                            <img src="assets/images/hero/photobooth-hero.png" alt="">
-                        </div>
-                    </div>
+            <div class="carousel__container">
+                <div class="carousel">
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
                 </div>
             </div>
         </div>
@@ -78,24 +57,25 @@
     <section class="paint-purpose">
 
         <div class="paint-purpose__container">
-
+            <div class="svg">
+                <img src="assets/images/photobooth/shapes/BG Icon.png" alt="">
+            </div>
             <!-- Left Content -->
             <div class="paint-purpose__content">
-                <img src="assets/images/photobooth/shapes/BG Icon.png" alt="">
                 <h2>PAINT OUR<br> PURPOSE</h2>
 
                 <div class="paint-purpose__locations">
                     <span class="tag" data-location="uk">UK</span>
-                    <span class="tag" data-location="somerset">Somerset, New Jersey, US</span>
+                    <span class="tag" data-location="us">Somerset, New Jersey, US</span>
                     <span class="tag highlight" data-location="india">Global HR Offsite, India</span>
                 </div>
             </div>
 
             <!-- Right Image Grid (images update on location tag click) -->
             <div class="paint-purpose__images" id="paint-purpose-images">
-                <img src="assets/images/photobooth/HR-1.png" alt="">
-                <img src="assets/images/photobooth/HR-2.png" alt="">
-                <img src="assets/images/photobooth/HR-3.png" alt="">
+                <img src="assets/images/photobooth/news-and-events/Purpose/global-hr-offsite-India/1.png" alt="">
+                <img src="assets/images/photobooth/news-and-events/Purpose/global-hr-offsite-India/2.png" alt="">
+                <img src="assets/images/photobooth/news-and-events/Purpose/global-hr-offsite-India/3.png" alt="">
             </div>
 
         </div>
@@ -106,75 +86,160 @@
     <?php require_once 'footer.php' ?>
 
 </body>
+<!-- Bottom Grid images -->
 <script>
-    const items = document.querySelectorAll('.carousel-item');
+    document.addEventListener("DOMContentLoaded", function () {
 
-    let index = 0;
-
-    function updateCarousel() {
-        items.forEach(item => {
-            item.classList.remove('left', 'active', 'right');
-        });
-
-        items[index].classList.add('active');
-        items[(index + 1) % items.length].classList.add('right');
-        items[(index - 1 + items.length) % items.length].classList.add('left');
-    }
-
-    setInterval(() => {
-        index = (index + 1) % items.length;
-        updateCarousel();
-    }, 3000);
-
-    updateCarousel();
-
-    // PAINT OUR PURPOSE: location tags switch images with smooth animation
-    (function () {
-        var imageSets = {
+        const imageSets = {
             uk: [
-                'assets/images/photobooth/HR-1.png',
-                'assets/images/photobooth/HR-2.png',
-                'assets/images/photobooth/HR-3.png'
+                'assets/images/photobooth/news-and-events/Purpose/UK/1.png',
+                'assets/images/photobooth/news-and-events/Purpose/UK/2.png',
+                'assets/images/photobooth/news-and-events/Purpose/UK/3.png'
             ],
-            somerset: [
-                'assets/images/photobooth/HR-1.png',
-                'assets/images/photobooth/HR-2.png',
-                'assets/images/photobooth/HR-3.png'
+            us: [
+                'assets/images/photobooth/news-and-events/Purpose/somerset-new-jersey-US/1.png',
+                'assets/images/photobooth/news-and-events/Purpose/somerset-new-jersey-US/2.png',
+                'assets/images/photobooth/news-and-events/Purpose/somerset-new-jersey-US/3.png'
             ],
             india: [
-                'assets/images/photobooth/HR-1.png',
-                'assets/images/photobooth/HR-2.png',
-                'assets/images/photobooth/HR-3.png'
+                'assets/images/photobooth/news-and-events/Purpose/global-hr-offsite-India/1.png',
+                'assets/images/photobooth/news-and-events/Purpose/global-hr-offsite-India/2.png',
+                'assets/images/photobooth/news-and-events/Purpose/global-hr-offsite-India/3.png'
             ]
         };
 
-        var container = document.getElementById('paint-purpose-images');
-        var tags = document.querySelectorAll('.paint-purpose__locations .tag');
-        var imgs = container ? container.querySelectorAll('img') : [];
+        const container = document.getElementById("paint-purpose-images");
+        const images = container.querySelectorAll("img");
+        const tags = document.querySelectorAll(".paint-purpose__locations .tag");
 
-        function setImages(urls) {
-            if (!container || !urls || urls.length !== imgs.length) return;
-            container.classList.add('is-transitioning');
-            setTimeout(function () {
-                urls.forEach(function (url, i) {
-                    if (imgs[i]) imgs[i].src = url;
+        function changeImages(location) {
+            const urls = imageSets[location];
+
+            container.classList.add("is-transitioning");
+
+            setTimeout(() => {
+
+                images.forEach((img, i) => {
+                    img.src = urls[i];
                 });
-                requestAnimationFrame(function () {
-                    container.classList.remove('is-transitioning');
-                });
-            }, 400);
+
+                container.classList.remove("is-transitioning");
+
+            }, 300);
         }
 
-        tags.forEach(function (tag) {
-            tag.addEventListener('click', function () {
-                var loc = this.getAttribute('data-location');
-                if (!loc || !imageSets[loc]) return;
-                tags.forEach(function (t) { t.classList.remove('highlight'); });
-                this.classList.add('highlight');
-                setImages(imageSets[loc]);
+        tags.forEach(tag => {
+            tag.addEventListener("click", function () {
+
+                const location = this.dataset.location;
+
+                tags.forEach(t => t.classList.remove("highlight"));
+                this.classList.add("highlight");
+
+                changeImages(location);
             });
         });
-    })();
+
+    });
+</script>
+
+<!-- 3D- Carousel Animation -->
+<script>
+    const carousel = document.querySelector(".carousel");
+    const faces = document.querySelectorAll(".carousel__face");
+
+    const total = faces.length;
+    const angle = 360 / total;
+
+    let rotation = 0;
+    let startX = 0;
+    let isDragging = false;
+    let autoRotate = true;
+
+
+    // place cards
+    faces.forEach((face, i) => {
+        face.dataset.index = i;
+        face.style.transform = `rotateY(${i * angle}deg) translateZ(430px)`;
+    });
+
+
+    // update depth (opacity + scale)
+    function updateCarousel() {
+
+        carousel.style.transform = `rotateY(${rotation}deg)`;
+
+        faces.forEach((face, i) => {
+
+            let cardAngle = (i * angle + rotation) % 360;
+            if (cardAngle < 0) cardAngle += 360;
+
+            let distance = Math.abs(cardAngle);
+            if (distance > 180) distance = 360 - distance;
+
+            const opacity = 1 - (distance / 180) * 0.8;
+            const scale = 1 - (distance / 180) * 0.25;
+
+            face.style.opacity = opacity;
+
+            face.style.transform =
+                `rotateY(${i * angle}deg) translateZ(430px) scale(${scale})`;
+        });
+    }
+
+
+    // animation loop
+    function animate() {
+
+        if (autoRotate && !isDragging) {
+            rotation += 0.1;
+        }
+
+        updateCarousel();
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
+
+    // DRAG START
+    carousel.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        autoRotate = false;
+        startX = e.clientX;
+        carousel.style.cursor = "grabbing";
+    });
+
+
+    // DRAG
+    window.addEventListener("mousemove", (e) => {
+
+        if (!isDragging) return;
+
+        const diff = e.clientX - startX;
+
+        rotation += diff * 0.25;
+
+        startX = e.clientX;
+    });
+
+
+    // DRAG END
+    window.addEventListener("mouseup", () => {
+
+        if (!isDragging) return;
+
+        isDragging = false;
+        carousel.style.cursor = "grab";
+    });
+
+
+    // HOVER
+    carousel.addEventListener("mouseenter", () => autoRotate = false);
+    carousel.addEventListener("mouseleave", () => {
+        if (!isDragging) autoRotate = true;
+    });
 </script>
 
 </html>
