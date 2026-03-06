@@ -16,7 +16,7 @@
 
 .purpose__hero-image {
   width: vw(1920);
-  height: vw(1000);
+  height: vw(675);
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
@@ -125,14 +125,18 @@
   justify-content: center;
   align-items: center;
   padding: vw(60);
+  .hero__pause-wrap {
+    display: none;
+  }
 }
 
 .purpose-hero__media {
   position: relative;
-  width: 100%;
+  width: vw(1300);
   max-width: 100%;
   aspect-ratio: 301 / 158;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .purpose-hero__media .hero__poster,
@@ -209,8 +213,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: vw(409);
-  height: vw(409);
+  width: vw(90);
+
   border: none;
   background: none;
   cursor: pointer;
@@ -257,6 +261,8 @@
   .purpose__hero-image {
     max-width: 100%;
     width: 100%;
+
+
     height: auto;
   }
 
