@@ -262,7 +262,6 @@
     max-width: 100%;
     width: 100%;
 
-
     height: auto;
   }
 
@@ -402,6 +401,31 @@
 }
 
 /*  PURPOSE PHOTOBOOTH SECTION 📷 */
+// Hero section
+.purposebooth-hero {
+  width: 100%;
+  height: vw(686);
+  overflow: hidden;
+}
+.purposebooth-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@include max_breakpoint(414px) {
+  .purposebooth-hero {
+    height: auto;
+  }
+
+  .purposebooth-hero-image {
+    width: 100%;
+    height: vw(400, 414);
+    object-fit: cover;
+    object-position: center;
+  }
+}
 // Title
 .purpose-photobooth__header {
   position: relative;
@@ -440,12 +464,13 @@
 
 .purpose-photobooth__filters {
   width: 100%;
-  height: vw(126);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0 vw(80);
   gap: vw(50);
+  margin-top: vw(50);
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -472,16 +497,30 @@
   box-shadow: 0 vw(3.6) vw(3.6) rgba(0, 0, 0, 0.25);
 }
 
+@include max_breakpoint(414px) {
+  .purpose-photobooth__filters {
+    margin-top: vw(20, 414);
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-size: vw(14, 414);
+    padding: vw(8, 414) vw(12, 414);
+    border-radius: vw(6, 414);
+  }
+}
+
 /* CAROUSEL CONTAINER */
 .carousel__container {
   position: relative;
-  width: 320px;
-  margin: 100px auto;
-  perspective: 1000px;
+  width: vw(1200);
+  height: vw(600);
+  // margin: vw(120) auto;
+  perspective: vw(2000);
 }
 
 .carousel {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -493,32 +532,19 @@
 
 .carousel__face {
   position: absolute;
-  width: 300px;
-  height: 187px;
-  top: 20px;
-  left: 10px;
-  right: 10px;
-  background-size: cover;
-  object-fit: cover;
-  // box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  width: vw(520);
+  height: vw(494);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  transform-style: preserve-3d;
+  border-radius: vw(12);
+  overflow: hidden;
   display: flex;
+  align-items: center;
+  justify-content: center;
   transition: opacity 0.35s ease, transform 0.35s ease;
-}
-
-.carousel__face:nth-child(1) {
-  background-image: url("../images/hero/photobooth-hero.png");
-}
-.carousel__face:nth-child(2) {
-  background-image: url("../images/hero/photobooth-hero.png");
-}
-.carousel__face:nth-child(3) {
-  background-image: url("../images/hero/photobooth-hero.png");
-}
-.carousel__face:nth-child(4) {
-  background-image: url("../images/hero/photobooth-hero.png");
-}
-.carousel__face:nth-child(5) {
-  background-image: url("../images/hero/photobooth-hero.png");
 }
 
 .carousel:hover {
@@ -532,6 +558,63 @@
   to {
     transform: rotateY(360deg);
   }
+}
+.desktop-carousel {
+  display: block;
+}
+
+.mobile-slider {
+  display: none;
+}
+
+@include max_breakpoint(414px) {
+  .desktop-carousel {
+    display: none;
+  }
+
+  .mobile-slider {
+    display: flex;
+    width: 100%;
+    height: vw(420, 414);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 800px;
+  }
+}
+
+// Mobile Slider
+.mobile-slider {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 800px;
+}
+
+.mobile-carousel {
+  position: relative;
+  width: vw(360, 414);
+  height: vw(220, 414);
+  transform-style: preserve-3d;
+}
+
+.mobile-card {
+  position: absolute;
+  width: 100%;
+  height: vw(220, 414);
+  border-radius: vw(16, 414);
+  overflow: hidden;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.mobile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
 }
 
 /* PAINT OUR PURPOSE SECTION */
