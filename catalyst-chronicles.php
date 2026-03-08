@@ -50,6 +50,8 @@
 				<a href="#videos" class="section-chronicles-bg__cta">videos below!</a>
 			</div>
 			<div class="section-chronicles-bg__images">
+				<!-- Desktop: infinite + animated SVG (hidden on mobile) -->
+				<div class="section-chronicles-bg__images-desktop">
 				<img src="assets/images/catylist/infinite.svg" alt="" class="section-chronicles-bg__infinite" width="1632" height="806" />
 				<svg id="chronicles-union-svg" class="section-chronicles-bg__union" viewBox="0 0 1574 793" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
 					<defs>
@@ -85,70 +87,70 @@
 						</symbol>
 					</defs>
 					<path d="M211.438 30.4402C313.881 -14.2701 438.372 -15.8836 561.418 67.488C741.408 189.443 868.652 361.722 965.121 462.331C1017.01 516.448 1060.57 552.214 1104.01 571.687C1143.78 589.519 1188.74 596.069 1250.13 580.233C1279.07 572.771 1316.31 543.937 1343.15 493.063C1369.48 443.162 1376.72 388.599 1364.84 346.722L1462.48 319.016L1560.13 291.311C1589.25 393.934 1567.74 502.422 1522.69 587.795C1478.16 672.196 1401.4 750.862 1300.83 776.801C1196.48 803.714 1104.25 794.264 1020.96 756.924C941.335 721.225 875.955 662.647 818.596 602.827C696.565 475.56 604.058 341.59 447.549 235.545C386.407 194.117 336.147 197.503 292.638 216.493C243.11 238.109 198.728 282.788 171.967 325.452L0 217.581C42.2383 150.245 115.013 72.5237 211.438 30.4402Z" fill=""/>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="0" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="0" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/1.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="2.78" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="2.78" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/2.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="5.56" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="5.56" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/3.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="8.33" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="8.33" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/4.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="11.11" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="11.11" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/5.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="13.89" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="13.89" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/6.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="16.67" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="16.67" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/7.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="16.67" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="16.67" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/8.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="19.44" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="19.44" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/9.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
 						</g>
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
-					<g class="section-chronicles-bg__profile-wrap" data-begin="22.22" style="opacity:0">
+					<g class="section-chronicles-bg__profile-wrap js-chronicles-play" data-begin="22.22" style="opacity:0">
 						<g>
 							<circle class="section-chronicles-bg__profile-border" r="45" fill="none" stroke="#0CC950" stroke-width="2"/>
 							<image href="assets/images/catylist/infinite/1.png" x="-45" y="-45" width="90" height="90" preserveAspectRatio="xMidYMid slice" clip-path="url(#profile-circle)"/>
@@ -156,6 +158,20 @@
 						<g class="section-chronicles-bg__profile-play"><use href="#chronicles-play-icon" x="-35" y="-35" width="70" height="70"/></g>
 					</g>
 				</svg>
+				</div>
+				<!-- Mobile: 3-column grid (visible only on mobile) -->
+				<div class="section-chronicles-bg__grid">
+					<?php for ($i = 1; $i <= 9; $i++) : ?>
+					<button type="button" class="section-chronicles-bg__grid-item js-chronicles-play" aria-label="Play video">
+						<span class="section-chronicles-bg__grid-avatar">
+							<img src="assets/images/catylist/infinite/<?php echo $i; ?>.png" alt="" width="90" height="90" />
+						</span>
+						<span class="section-chronicles-bg__grid-play">
+							<svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M28.55 14.73L49.1 27 28.55 39.27V14.73Z" fill="#048B35"/><path d="M35.23 54C23.21 54.11 12.17 46.14 8.91 34C5.06 19.59 13.6 4.78 28 0.93C42.4-2.93 57.2 5.61 61.06 20C64.92 34.4 56.38 49.2 42 53.07C39.73 53.68 37.46 53.97 35.23 54ZM28.56 39.21L49.14 27 28.56 14.78V39.21Z" fill="white"/></svg>
+						</span>
+					</button>
+					<?php endfor; ?>
+				</div>
 			</div>
 		</section>
 
@@ -178,6 +194,7 @@
 	</style>
 	<script>
 	(function() {
+		if (window.matchMedia('(max-width: 414px)').matches) return;
 		var svg = document.getElementById('chronicles-union-svg');
 		var pathEl = document.getElementById('chronicles-motion-path');
 		var wraps = document.querySelectorAll('.section-chronicles-bg__profile-wrap');
@@ -225,7 +242,7 @@
 		var svg = document.getElementById('chronicles-union-svg');
 		var profiles = document.querySelectorAll('.section-chronicles-bg__profile-wrap');
 		var unpauseTimer = null;
-		if (!svg || !profiles.length) return;
+		if (!svg || !profiles.length || window.matchMedia('(max-width: 414px)').matches) return;
 		function pause() {
 			clearTimeout(unpauseTimer);
 			unpauseTimer = null;
@@ -249,7 +266,7 @@
 		var video = popup && popup.querySelector('.chronicles-video-popup__video');
 		var overlay = popup && popup.querySelector('.chronicles-video-popup__overlay');
 		var closeBtn = popup && popup.querySelector('.chronicles-video-popup__close');
-		var profiles = document.querySelectorAll('.section-chronicles-bg__profile-wrap');
+		var profiles = document.querySelectorAll('.js-chronicles-play');
 		var videoSrc = 'assets/videos/3-Our Purpose -Standalone -High Resolution.mp4';
 		if (!popup || !video) return;
 		function openPopup() {
