@@ -126,7 +126,16 @@
   align-items: center;
   padding: vw(60);
   .hero__pause-wrap {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+   .hero__pause-wrap-inner{
+    width: vw(90);
+   }
+  }
+  &:hover .hero__pause-wrap:not([hidden]) {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -316,6 +325,9 @@
 
 /* Mobile: purpose-highlights – larger text for readability */
 @include max_breakpoint(414px) {
+  .purpose-hero__media {
+    width: 100%;
+  }
   .purpose__hero-image {
     max-width: 100%;
     width: 100%;
@@ -333,7 +345,7 @@
   }
 
   .year-btn {
-    font-size: vw(26, 414);
+    font-size: vw(18, 414);
     padding: vw(8, 414) vw(14, 414);
     border-radius: vw(10, 414);
   }
@@ -352,7 +364,7 @@
     width: auto;
     min-width: vw(100, 414);
     height: vw(44, 414);
-    font-size: vw(20, 414);
+    font-size: vw(14, 414);
     padding: 0 vw(12, 414);
     border-radius: vw(8.8, 414);
   }
@@ -467,10 +479,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 vw(80);
+  padding: 0 vw(100);
   gap: vw(50);
   margin-top: vw(50);
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .filter-btn {
@@ -561,6 +575,7 @@
 }
 .desktop-carousel {
   display: block;
+  margin-top: -5vw;
 }
 
 .mobile-slider {
@@ -603,7 +618,7 @@
   position: absolute;
   width: 100%;
   height: vw(220, 414);
-  border-radius: vw(16, 414);
+ 
   overflow: hidden;
   transition:
     transform 0.4s ease,
@@ -679,9 +694,7 @@
 .paint-purpose__locations {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: vw(16);
+
 }
 
 .paint-purpose__locations .tag {
@@ -701,6 +714,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 105%; /* 36.75px */
+  margin: vw(10);
 
   &:hover {
     opacity: 0.9;
@@ -835,6 +849,7 @@
     font-size: vw(16, 414);
     padding: vw(10, 414) vw(16, 414);
     border-radius: vw(4, 414);
+    margin: vw(5, 414);
 
     &.highlight {
       font-size: vw(16, 414);
@@ -844,18 +859,18 @@
 
   .paint-purpose__images {
     width: 100%;
-    max-width: vw(360, 414);
+    max-width: 100%;
     height: auto;
     min-height: 0;
-    max-height: 55vh;
+    max-height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     gap: vw(12, 414);
   }
 
   .paint-purpose__images img {
-    max-height: 18vh;
-    min-height: vw(80, 414);
+    max-height: auto;
+    min-height: auto;
     object-fit: cover;
   }
 
