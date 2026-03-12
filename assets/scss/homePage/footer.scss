@@ -1,0 +1,40 @@
+/* Back to top button – fixed bottom-right, visible on all pages */
+.back-to-top {
+  position: fixed;
+  bottom: vw(32);
+  right: vw(32);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: vw(56);
+  height: vw(56);
+  min-width: 48px;
+  min-height: 48px;
+  background: #1e9b26;
+  color: #fff;
+  border: vw(1) solid #277e12;
+  border-radius: 50%;
+  box-shadow: 0 vw(4) vw(12) rgba(1, 114, 8, 0.35);
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(vw(8));
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease,
+    background 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background: #167e1d;
+    color: #fff;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
