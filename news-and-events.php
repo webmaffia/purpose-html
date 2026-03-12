@@ -312,8 +312,8 @@
 
                 const offset = i - position;
 
-                const rotate = offset * -10;
-                const translate = offset * -220;
+                const rotate = offset * 10;
+                const translate = offset * 220;
 
                 card.style.transform =
                     `rotateY(${rotate}deg) translateX(${translate}px)`;
@@ -430,12 +430,10 @@
 
             const diff = e.changedTouches[0].clientX - startX;
 
-            if (diff > 50 && position > 0) {
-                position--;
-            }
-
-            else if (diff < -50 && position < total - 1) {
-                position++;
+            if (diff > 50) {
+                position = position > 0 ? position - 1 : total - 1;
+            } else if (diff < -50) {
+                position = position < total - 1 ? position + 1 : 0;
             }
 
             updateCarousel();
@@ -633,8 +631,8 @@
 
                 const offset = position - i;
 
-                const rotate = offset * -5;
-                const translate = offset * 220;
+                const rotate = offset * 5;
+                const translate = offset * -220;
                 const scale = offset === 0 ? 1 : 0.85;
 
                 card.style.transform =
@@ -669,16 +667,30 @@
 
             const diff = e.changedTouches[0].clientX - startX;
 
-            if (diff > 50 && position < total - 1) {
-                position++;
-            }
-
-            if (diff < -50 && position > 0) {
-                position--;
+            if (diff > 50) {
+                position = position > 0 ? position - 1 : total - 1;
+            } else if (diff < -50) {
+                position = position < total - 1 ? position + 1 : 0;
             }
 
             updateCarousel();
 
+        });
+
+        const autoSlideInterval = 4000;
+        let autoSlideTimer = setInterval(() => {
+            position = (position + 1) % total;
+            updateCarousel();
+        }, autoSlideInterval);
+
+        slider.addEventListener("touchstart", () => {
+            clearInterval(autoSlideTimer);
+        }, { passive: true });
+        slider.addEventListener("touchend", () => {
+            autoSlideTimer = setInterval(() => {
+                position = (position + 1) % total;
+                updateCarousel();
+            }, autoSlideInterval);
         });
 
     });
