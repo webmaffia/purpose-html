@@ -728,13 +728,6 @@
 .paint-purpose__locations {
   position: relative;
   z-index: 1;
-<<<<<<< HEAD
-  display: flex;
-  gap: vw(30);
-  margin: vw(30) 0;
-=======
-
->>>>>>> ceed3f66c7310af9bf2ba742d9f9b814e607f749
 }
 
 .paint-purpose__locations .tag {
@@ -750,13 +743,8 @@
   font-size: vw(20);
   font-style: normal;
   font-weight: 500;
-<<<<<<< HEAD
-  line-height: 105%; /* 21px */
-  cursor: pointer;
-=======
   line-height: 105%; /* 36.75px */
   margin: vw(10);
->>>>>>> ceed3f66c7310af9bf2ba742d9f9b814e607f749
 
   &:hover {
     opacity: 0.9;
@@ -902,12 +890,6 @@
   }
 }
 
-<<<<<<< HEAD
-.back-to-top__icon {
-  width: vw(28);
-  height: vw(28);
-  display: block;
-=======
 // Mobile
 @include max_breakpoint(414px) {
   .paint-purpose {
@@ -977,5 +959,4 @@
   .svg {
     width: vw(650, 1024);
   }
->>>>>>> ceed3f66c7310af9bf2ba742d9f9b814e607f749
 }
