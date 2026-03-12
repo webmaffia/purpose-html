@@ -178,7 +178,7 @@
     border-color: #03842e;
     color: #fff;
     font-family: Inter;
-    font-size: vw(20);
+    // font-size: vw(20);
     font-style: normal;
     font-weight: 500;
     line-height: 105%;
@@ -353,5 +353,40 @@
   }
   img:nth-child(6) {
     grid-area: img6;
+  }
+}
+
+/* Mobile: both grids – 2 images per row */
+@include max_breakpoint(768px) {
+  .photobooth__images,
+  .paint-purpose__images {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: minmax(vw(120, 768), auto);
+    grid-template-areas: none;
+    gap: vw(12, 768);
+    padding-left: vw(20, 768);
+    padding-right: vw(20, 768);
+    img,
+    img:nth-child(n) {
+      grid-area: auto !important;
+      min-height: 0;
+    }
+  }
+}
+
+@include max_breakpoint(414px) {
+  .photobooth__images,
+  .paint-purpose__images {
+    gap: vw(12, 414);
+    padding-left: vw(16, 414);
+    padding-right: vw(16, 414);
+  }
+  .paint-purpose__locations{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .paint-purpose__locations .tag{
+    font-size: 2.5vw;
   }
 }
