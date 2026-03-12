@@ -1,3 +1,9 @@
+<!-- Back to top: fixed bottom-right, visible on all pages -->
+<a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+	<svg class="back-to-top__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+		<path d="M18 15l-6-6-6 6"/>
+	</svg>
+</a>
 <footer class="footer">
 	<div class="footer__inner">
 		<div class="footer__top">
@@ -132,4 +138,21 @@
     // start loading scripts
     loadScript(0);
 }();
+</script>
+
+<!-- Back-to-top functionality -->
+<script>
+(function () {
+    var btn = document.getElementById('back-to-top');
+    if (!btn) return;
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    function toggleVisibility() {
+        btn.classList.toggle('is-visible', window.scrollY > 300);
+    }
+    toggleVisibility();
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
+})();
 </script>
